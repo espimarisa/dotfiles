@@ -1,0 +1,17 @@
+[user]
+name = Espi Marisa
+email = contact@espi.me
+username = espimarisa
+signingkey = BC546F551DEE4E3E
+
+[init]
+defaultBranch = main
+
+[commit]
+gpgsign = true
+
+[core]
+editor = nano
+
+[gpg]
+program = gpg
