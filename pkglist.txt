@@ -60,6 +60,7 @@ perl-tk
 perl-yaml-tiny
 plasma-browser-integration
 plasma-workspace-wallpapers
+postgresql
 print-manager
 proton-ge-custom-bin
 rbenv
