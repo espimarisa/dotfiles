@@ -1,3 +1,7 @@
 # dotfiles
 
-personal dotfiles from my cachyos install
+global dotfiles and configuration files from my cachyos install
+
+# license
+
+[MIT](LICENSE)

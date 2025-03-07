@@ -1,0 +1,164 @@
+{
+  "extensions": {
+    "moonbase": true,
+    "disableSentry": true,
+    "noTrack": true,
+    "noHideToken": true,
+    "allActivities": {
+      "enabled": true,
+      "config": {
+        "icons": false
+      }
+    },
+    "ownerCrown": {
+      "enabled": true
+    },
+    "betterCodeblocks": {
+      "enabled": true
+    },
+    "betterEmbedsYT": {
+      "enabled": true
+    },
+    "callIdling": {
+      "enabled": true
+    },
+    "callTimer": {
+      "enabled": true
+    },
+    "clearUrls": {
+      "enabled": true
+    },
+    "copyAvatarUrl": {
+      "enabled": true
+    },
+    "moonlight-css": {
+      "enabled": true,
+      "config": {
+        "cssPath": "/home/espi/.config/moonlight-mod/",
+        "recurseDirectory": true
+      }
+    },
+    "dmDates": {
+      "enabled": true
+    },
+    "dmFavorites": {
+      "enabled": true
+    },
+    "domOptimizer": {
+      "enabled": true
+    },
+    "experiments": {
+      "enabled": true
+    },
+    "freeScreenShare": {
+      "enabled": true
+    },
+    "hideBlocked": {
+      "enabled": true
+    },
+    "highlight": {
+      "enabled": true,
+      "config": {
+        "keywords": ["espi"]
+      }
+    },
+    "imgTitle": {
+      "enabled": true,
+      "config": {
+        "showFullUrl": true
+      }
+    },
+    "imageViewer": {
+      "enabled": true
+    },
+    "inviteToNowhere": {
+      "enabled": true
+    },
+    "jumpToBlocked": {
+      "enabled": true
+    },
+    "keybindTweaks": {
+      "enabled": true,
+      "config": {
+        "disableCallStart": true,
+        "disableToggleCategoryCollapsed": true
+      }
+    },
+    "mediaControls": {
+      "enabled": true
+    },
+    "mediaTweaks": {
+      "enabled": true
+    },
+    "memberCount": {
+      "enabled": true
+    },
+    "mentionAvatars": {
+      "enabled": true
+    },
+    "nativeFixes": {
+      "enabled": true,
+      "config": {
+        "linuxAutoscroll": true,
+        "linuxUpdater": true
+      }
+    },
+    "neatSettingsContext": {
+      "enabled": true
+    },
+    "noHelp": {
+      "enabled": true
+    },
+    "noInlineLinks": {
+      "enabled": true
+    },
+    "noMaskedLinkPaste": {
+      "enabled": true
+    },
+    "noReplyChainNag": {
+      "enabled": true
+    },
+    "platformIcons": {
+      "enabled": true,
+      "config": {
+        "bots": true,
+        "voice": true,
+        "messages": false
+      }
+    },
+    "platformStyles": {
+      "enabled": true,
+      "config": {
+        "style": "linux"
+      }
+    },
+    "reverseImageSearch": {
+      "enabled": true
+    },
+    "showAllRoles": {
+      "enabled": true
+    },
+    "showMediaOptions": {
+      "enabled": true
+    },
+    "showReplySelf": {
+      "enabled": true
+    },
+    "spotifySpoof": {
+      "enabled": true
+    },
+    "trustAllDomains": {
+      "enabled": true
+    },
+    "unindent": {
+      "enabled": true
+    },
+    "viewJson": {
+      "enabled": true
+    },
+    "whoJoined": {
+      "enabled": false
+    }
+  },
+  "repositories": ["https://moonlight-mod.github.io/extensions-dist/repo.json"]
+}

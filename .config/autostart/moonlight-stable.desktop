@@ -1,0 +1,20 @@
+[Desktop Entry]
+Categories=Network;InstantMessaging;
+Comment[en_US]=moonlight Launcher
+Comment=moonlight Launcher
+Exec=/usr/bin/moonlight-stable -- --enable-blink-features=MiddleClickAutoscroll --start-minimized
+GenericName[en_US]=Internet Messenger
+GenericName=Internet Messenger
+Icon=discord
+MimeType=
+Name[en_US]=moonlight
+Name=moonlight
+NoDisplay=false
+Path=
+StartupNotify=true
+StartupWMClass=moonlight-stable
+Terminal=false
+TerminalOptions=
+Type=Application
+X-KDE-SubstituteUID=false
+X-KDE-Username=

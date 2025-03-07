@@ -1,17 +1,18 @@
 [user]
-name = Espi Marisa
-email = contact@espi.me
-username = espimarisa
-signingkey = BC546F551DEE4E3E
+name = Espi Marisa # Git name
+email = contact@espi.me # Git email
+username = espimarisa # Git username
+signingkey = BC546F551DEE4E3E # PGP pubkey for signing
 
 [init]
-defaultBranch = main
+defaultBranch = main # Use main as the default branch name
 
 [commit]
-gpgsign = true
+gpgsign = true # Always sign commits
 
 [core]
-editor = nano
+editor = micro # Use micro as the git editor
+excludesFile = "~/.gitignore" # Source a global gitignore file
 
 [gpg]
-program = gpg
+program = gpg # Use the default gpg binrary for signing
