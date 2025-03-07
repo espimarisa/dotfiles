@@ -1,10 +1,14 @@
 appmenu-gtk-module
+appimagelauncher
 aria2
 base-devel
 cdrdao
 chromium
+cmake
 cups
 cups-pdf
+docker
+docker-compose
 dialog
 discord
 dolphin-emu
@@ -29,6 +33,7 @@ kamoso
 kdeplasma-addons
 kdialog
 keepassxc
+keybase
 kvantum
 kvkonqi
 libappindicator-gtk2
@@ -62,6 +67,7 @@ ruby-install
 rust
 signal-desktop
 snapper
+spectacle
 steam
 system-config-printer
 telegram-desktop
@@ -80,7 +86,7 @@ vala
 vcdimager
 vlc
 vscodium-bin
-vscodium-marketplace
+vscodium-bin-marketplace
 webkit2gtk
 wine
 wine-mono
