@@ -33,7 +33,7 @@ kamoso
 kdeplasma-addons
 kdialog
 keepassxc
-keybase
+keybase-bin
 kvantum
 kvkonqi
 libappindicator-gtk2
