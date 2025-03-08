@@ -73,6 +73,7 @@ spectacle
 steam
 system-config-printer
 telegram-desktop
+texlab
 tex-fmt
 texlive-binextra
 texlive-fontsextra
