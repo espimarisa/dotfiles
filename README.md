@@ -1,6 +1,6 @@
 # dotfiles
 
-global dotfiles and configuration files from my cachyos install
+personal configuration files from my cachyos linux setup
 
 # license
 
