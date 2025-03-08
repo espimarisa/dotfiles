@@ -1,0 +1,14 @@
+[ExtractDialog]
+DirHistory[$e]=$HOME/Downloads/
+
+[Extraction]
+closeAfterExtraction=true
+openDestinationFolderAfterExtraction=true
+
+[General]
+LockSidebar=true
+ShowSidebar=true
+defaultOpenAction=Open
+
+[MainWindow]
+StatusBar=Disabled
