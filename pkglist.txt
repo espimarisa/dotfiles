@@ -24,10 +24,10 @@ gvfs
 hunspell
 hunspell-en_us
 hyfetch
-jdk17-openjdk
-jre8-openjdk
-jre11-openjdk
-jre21-openjdk
+jdk8-openjdk
+jdk11-openjdk
+jdk17-openjdk 
+jdk21-openjdk
 k3b
 kamoso
 kdeplasma-addons
