@@ -26,8 +26,9 @@ hunspell-en_us
 hyfetch
 jdk8-openjdk
 jdk11-openjdk
-jdk17-openjdk 
+jdk17-openjdk
 jdk21-openjdk
+junit
 k3b
 kamoso
 kdeplasma-addons
@@ -73,8 +74,9 @@ steam
 system-config-printer
 telegram-desktop
 tex-fmt
-texlive
 texlive-binextra
+texlive-fontsextra
+texlive-lang
 thorium-browser-bin
 tlp
 tlp-rdw
