@@ -1,20 +1,15 @@
-/* to having to avoid writing a ton of hyper-specific css that will likely break. */
-/* this *does* make codeblocks be non-mono, and i cannot be tasked with fixing it, but */
-/* that personally doesn't bug me as I rarely use or see them and atkinson is good enough */
+/* this *does* make codeblocks be non-mono, and i cannot be tasked with fixing it */
 * {
   font-family: "Atkinson Hyperlegible Next" !important;
   font-weight: 400 !important;
 }
 
 /* hide nitro gift button in the input bar, language dependent */
-/* this is not the most reliable due to being language dependent */
-/* but it is still more than using a react classname that may change */
 button[aria-label="Send a gift"] {
   display: none;
 }
 
 /* hide shop, store, and library buttons in /me */
-/* this selects by href, and could possibly change, but unlikely */
 *[href="/shop"],
 *[href="/store"],
 *[href="/library"] {
@@ -22,8 +17,6 @@ button[aria-label="Send a gift"] {
 }
 
 /* hides the annoying active now pane on /me */
-/* doesn't seem to be a 100% way to ensure this stays hidden since it's reliant on classname */
-/* shame on discord for even adding this useless junk */
 [class*="nowPlayingColumn_"] {
   display: none;
 }
