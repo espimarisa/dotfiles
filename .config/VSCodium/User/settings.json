@@ -84,7 +84,19 @@
 	},
 
 	// Java
+	"java.project.referencedLibraries": ["lib/**/*.jar", "/usr/share/java/**/*.jar"], // Search library path for references
 	"[java]": {
-		"editor.defaultFormatter": "redhat.java" // Use the Java formatter
+		"editor.defaultFormatter": "redhat.java", // Use Red hat
+		"prettier.tabWidth": 3, // Tab width of 3
+		"editor.tabSize": 3 // Tab size of 3
+	},
+
+	// Python and YAML
+	"[python, yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode",
+		"prettier.tabWidth": 4,
+		"editor.tabSize": 2,
+		"editor.insertSpaces": true,
+		"prettier.useTabs": false
 	}
 }
