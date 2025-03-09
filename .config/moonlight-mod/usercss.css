@@ -1,22 +1,22 @@
 /* this *does* make codeblocks be non-mono, and i cannot be tasked with fixing it */
 * {
-  font-family: "Atkinson Hyperlegible Next" !important;
-  font-weight: 400 !important;
+	font-family: "Atkinson Hyperlegible Next" !important;
+	font-weight: 400 !important;
 }
 
 /* hide nitro gift button in the input bar, language dependent */
 button[aria-label="Send a gift"] {
-  display: none;
+	display: none;
 }
 
 /* hide shop, store, and library buttons in /me */
 *[href="/shop"],
 *[href="/store"],
 *[href="/library"] {
-  display: none;
+	display: none;
 }
 
 /* hides the annoying active now pane on /me */
 [class*="nowPlayingColumn_"] {
-  display: none;
+	display: none;
 }

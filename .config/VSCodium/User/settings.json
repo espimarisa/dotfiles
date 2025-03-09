@@ -1,90 +1,90 @@
 {
-  ////////////////////
-  // Editor options
-  ////////////////////
+	////////////////////
+	// Editor options
+	////////////////////
 
-  "explorer.compactFolders": false, // Disable compact folders
-  "editor.detectIndentation": true, // Automatically detect indentation
-  "editor.bracketPairColorization.enabled": true, // Colorize bracket pairings
-  "editor.fontFamily": "Atkinson Hyperlegible Mono SmBd", // https://www.brailleinstitute.org/freefont/
-  "editor.fontLigatures": true, // Enables all font ligatures
-  "editor.guides.bracketPairs": true, // Enable bracket pairing
-  "editor.guides.bracketPairsHorizontal": "active", // Show horizontal bracket pairing guides
-  "editor.guides.highlightActiveIndentation": true, // Show active indent guide
-  "editor.snippetSuggestions": "bottom", // Puts suggestions at the bottom
-  "editor.suggestSelection": "first", // Always select the first suggestion
-  "editor.tabCompletion": "on", // Insert suggestions with tab
-  "editor.wordWrap": "on", // Enables word wrapping
-  "editor.tabSize": 2, // Sets the default tab size to 2
-  "terminal.integrated.fontFamily": "Fira Code Mono", // https://github.com/tonsky/FiraCode
-  "update.showReleaseNotes": false, // Disables the annoying release notes popup
-  "workbench.iconTheme": "material-icon-theme", // PKief.material-icon-theme
+	"explorer.compactFolders": false, // Disable compact folders
+	"editor.detectIndentation": true, // Automatically detect indentation
+	"editor.bracketPairColorization.enabled": true, // Colorize bracket pairings
+	"editor.fontFamily": "Atkinson Hyperlegible Mono SmBd", // https://www.brailleinstitute.org/freefont/
+	"editor.fontLigatures": true, // Enables all font ligatures
+	"editor.guides.bracketPairs": true, // Enable bracket pairing
+	"editor.guides.bracketPairsHorizontal": "active", // Show horizontal bracket pairing guides
+	"editor.guides.highlightActiveIndentation": true, // Show active indent guide
+	"editor.snippetSuggestions": "bottom", // Puts suggestions at the bottom
+	"editor.suggestSelection": "first", // Always select the first suggestion
+	"editor.tabCompletion": "on", // Insert suggestions with tab
+	"editor.wordWrap": "on", // Enables word wrapping
+	"editor.tabSize": 2, // Sets the default tab size to 2
+	"terminal.integrated.fontFamily": "Fira Code Mono", // https://github.com/tonsky/FiraCode
+	"update.showReleaseNotes": false, // Disables the annoying release notes popup
+	"workbench.iconTheme": "material-icon-theme", // PKief.material-icon-theme
 
-  ////////////////////
-  // Formatting options
-  ////////////////////
+	////////////////////
+	// Formatting options
+	////////////////////
 
-  "biome.enabled": false, // Disable Biome globally, require enabling per-project
-  "eslint.enable": false, // Disable ESLint globally, require enabling per-project
-  "editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
-  "files.eol": "\n", // Use unix-style line endings
-  "files.insertFinalNewline": true, // Always insert a blank final line
-  "files.trimTrailingWhitespace": true, // Trim trailing whitespace from files
-  "prettier.arrowParens": "always", // Always require arrows in parens
-  "prettier.bracketSameLine": true, // Put brackets on the same line
-  "prettier.bracketSpacing": true, // Put spacing between brackets
-  "prettier.embeddedLanguageFormatting": "auto", // Attempt to format embedded languages
-  "prettier.endOfLine": "lf", // Use LF by default
-  "prettier.enable": true, // Enables Prettier by default
-  "prettier.experimentalTernaries": true, // Use the new ternary formatting
-  "prettier.htmlWhitespaceSensitivity": "css", // Respect the default value of CSS display property
-  "prettier.proseWrap": "always", // Wrap prose if it exceeds the print width
-  "prettier.quoteProps": "consistent", // If at least one property in an object requires quotes, quote all properties
-  "prettier.trailingComma": "all", // Always append trailing commas
-  "prettier.printWidth": 80, // Max line length of 80
-  "prettier.tabWidth": 2, // Tab width of 2
-  "prettier.semi": true, // Always require semicolons
-  "prettier.singleQuote": false, // Do not use singlequotes
-  "prettier.useEditorConfig": true, // Use editorconfig options
-  "prettier.useTabs": true, // Use tabs by default
-  "prettier.vueIndentScriptAndStyle": true, // Format code and scripts inside of Vue tags
+	"biome.enabled": false, // Disable Biome globally, require enabling per-project
+	"eslint.enable": false, // Disable ESLint globally, require enabling per-project
+	"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
+	"files.eol": "\n", // Use unix-style line endings
+	"files.insertFinalNewline": true, // Always insert a blank final line
+	"files.trimTrailingWhitespace": true, // Trim trailing whitespace from files
+	"prettier.arrowParens": "always", // Always require arrows in parens
+	"prettier.bracketSameLine": true, // Put brackets on the same line
+	"prettier.bracketSpacing": true, // Put spacing between brackets
+	"prettier.embeddedLanguageFormatting": "auto", // Attempt to format embedded languages
+	"prettier.endOfLine": "lf", // Use LF by default
+	"prettier.enable": true, // Enables Prettier by default
+	"prettier.experimentalTernaries": true, // Use the new ternary formatting
+	"prettier.htmlWhitespaceSensitivity": "css", // Respect the default value of CSS display property
+	"prettier.proseWrap": "always", // Wrap prose if it exceeds the print width
+	"prettier.quoteProps": "consistent", // If at least one property in an object requires quotes, quote all properties
+	"prettier.trailingComma": "all", // Always append trailing commas
+	"prettier.printWidth": 80, // Max line length of 80
+	"prettier.tabWidth": 2, // Tab width of 2
+	"prettier.semi": true, // Always require semicolons
+	"prettier.singleQuote": false, // Do not use singlequotes
+	"prettier.useEditorConfig": true, // Use editorconfig options
+	"prettier.useTabs": true, // Use tabs by default
+	"prettier.vueIndentScriptAndStyle": true, // Format code and scripts inside of Vue tags
 
-  ////////////////////
-  // Extension options
-  ////////////////////
+	////////////////////
+	// Extension options
+	////////////////////
 
-  "go.toolsManagement.autoUpdate": true, // Automatically update Go tools
-  "python.languageServer": "Pylance", // Use Pylance for the Python language server
-  "redhat.telemetry.enabled": false, // Opts-out of Red Hat spyware
-  "svelte.enable-ts-plugin": true, // Enables TypeScript support for Svelte
-  "telemetry.telemetryLevel": "off", // Opts-out of Red Hat spyware
-  "vscord.app.name": "VSCodium", // Sets Discord RPC name
+	"go.toolsManagement.autoUpdate": true, // Automatically update Go tools
+	"python.languageServer": "Pylance", // Use Pylance for the Python language server
+	"redhat.telemetry.enabled": false, // Opts-out of Red Hat spyware
+	"svelte.enable-ts-plugin": true, // Enables TypeScript support for Svelte
+	"telemetry.telemetryLevel": "off", // Opts-out of Red Hat spyware
+	"vscord.app.name": "VSCodium", // Sets Discord RPC name
 
-  ////////////////////
-  // Language options
-  ////////////////////
+	////////////////////
+	// Language options
+	////////////////////
 
-  // LaTeX
-  "latex-utilities.message.update.show": false, // Disables the annoying update prompt
-  "latex-workshop.formatting.latex": "tex-fmt", // Use tex-fmt for formatting
-  "[latex]": {
-    "editor.defaultFormatter": "James-Yu.latex-workshop" // Use LaTeX formatter
-  },
+	// LaTeX
+	"latex-utilities.message.update.show": false, // Disables the annoying update prompt
+	"latex-workshop.formatting.latex": "tex-fmt", // Use tex-fmt for formatting
+	"[latex]": {
+		"editor.defaultFormatter": "James-Yu.latex-workshop" // Use LaTeX formatter
+	},
 
-  // Liquid
-  "[liquid]": {
-    "editor.defaultFormatter": "sissel.shopify-liquid" // Use Liquid formatter
-  },
+	// Liquid
+	"[liquid]": {
+		"editor.defaultFormatter": "sissel.shopify-liquid" // Use Liquid formatter
+	},
 
-  // JS/TS/JSON
-  "[javascript, javascriptreact, typescript, typescriptreact, json, jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
-    "javascript.preferences.importModuleSpecifierEnding": "js", // Always append .js to imports
-    "typescript.preferences.importModuleSpecifier": "relative" // Use the relative import path
-  },
+	// JS/TS/JSON
+	"[javascript, javascriptreact, typescript, typescriptreact, json, jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
+		"javascript.preferences.importModuleSpecifierEnding": "js", // Always append .js to imports
+		"typescript.preferences.importModuleSpecifier": "relative" // Use the relative import path
+	},
 
-  // Java
-  "[java]": {
-    "editor.defaultFormatter": "redhat.java" // Use the Java formatter
-  }
+	// Java
+	"[java]": {
+		"editor.defaultFormatter": "redhat.java" // Use the Java formatter
+	}
 }
