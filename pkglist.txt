@@ -345,12 +345,13 @@ java-environment-common
 java-runtime-common
 jbig2dec
 jbigkit
+jdk11-openjdk
 jdk17-openjdk
+jdk21-openjdk
+jdk8-openjdk
 jemalloc
 jfsutils
 jq
-jre11-openjdk
-jre21-openjdk
 jre8-openjdk
 jre8-openjdk-headless
 json-c
