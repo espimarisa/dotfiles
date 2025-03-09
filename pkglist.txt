@@ -338,7 +338,6 @@ itstool
 iw
 iwd
 jack2
-jamesdsp
 jansson
 jasper
 java-environment-common
@@ -429,6 +428,9 @@ kirigami2
 kitemmodels
 kitemviews
 kitemviews5
+kitty
+kitty-shell-integration
+kitty-terminfo
 kjobwidgets
 kjobwidgets5
 kmenuedit
@@ -780,6 +782,7 @@ libraw1394
 libreoffice-fresh
 librevenge
 librsvg
+librsync
 libsamplerate
 libsasl
 libseccomp
@@ -1285,6 +1288,7 @@ telegram-desktop
 tevent
 tex-fmt
 texinfo
+texlab
 texlive-basic
 texlive-bibtexextra
 texlive-bin
@@ -1296,6 +1300,23 @@ texlive-fontutils
 texlive-formatsextra
 texlive-games
 texlive-humanities
+texlive-langarabic
+texlive-langchinese
+texlive-langcjk
+texlive-langcyrillic
+texlive-langczechslovak
+texlive-langenglish
+texlive-langeuropean
+texlive-langfrench
+texlive-langgerman
+texlive-langgreek
+texlive-langitalian
+texlive-langjapanese
+texlive-langkorean
+texlive-langother
+texlive-langpolish
+texlive-langportuguese
+texlive-langspanish
 texlive-latex
 texlive-latexextra
 texlive-latexrecommended
