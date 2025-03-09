@@ -103,5 +103,11 @@
 		"editor.tabSize": 2, // View as 2 tabs
 		"editor.insertSpaces": true, // PEP8 wants spaces
 		"prettier.useTabs": false // Do not use tabs
+	},
+
+	// Shell files
+	"shellformat.useEditorConfig": true,
+	"[dotenv]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format"
 	}
 }
