@@ -67,6 +67,11 @@
 	// LaTeX
 	"latex-utilities.message.update.show": false, // Disables the annoying update prompt
 	"latex-workshop.formatting.latex": "tex-fmt", // Use tex-fmt for formatting
+	"latex-workshop.formatting.tex-fmt.args": [ // Tex-fmt arguments
+		"--nowrap", // do not wrap lines
+		"--usetabs", // format with tabs
+		"--tabsize=1" // format with a tab size of 2
+	],
 	"[latex]": {
 		"editor.defaultFormatter": "James-Yu.latex-workshop" // Use LaTeX formatter
 	},
@@ -93,10 +98,10 @@
 
 	// Python and YAML
 	"[python, yaml]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode",
-		"prettier.tabWidth": 4,
-		"editor.tabSize": 2,
-		"editor.insertSpaces": true,
-		"prettier.useTabs": false
+		"editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier
+		"prettier.tabWidth": 4, // PEP8 wants 4 spaces
+		"editor.tabSize": 2, // View as 2 tabs
+		"editor.insertSpaces": true, // PEP8 wants spaces
+		"prettier.useTabs": false // Do not use tabs
 	}
 }
