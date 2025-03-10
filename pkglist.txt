@@ -1376,8 +1376,7 @@ vim-runtime
 vlc
 vmaf
 volume_key
-vscodium-bin
-vscodium-bin-marketplace
+vscodium
 vscodium-marketplace
 vulkan-headers
 vulkan-icd-loader
