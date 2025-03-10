@@ -10,10 +10,14 @@ max_line_length = 80 # Max line length of 80 is generally preferred
 trim_trailing_whitespace = true # Always trim trailing whitepsace
 
 # PEP 8 guidelines for Python
-[*.py,*.yml,*.yaml]
+[*.{py,yml,yaml}]
 indent_size = 4 # PEP-8 wants the use of 4 per indent
 indent_style = space # PEP-8 wants the use of spaces
 
 # Checkstyle guidelines for Java
-[{*.java}]
+[*.java]
 indent_size = 3 # Checkstyle requires a level of 3
+
+# Markdown options
+[*.md]
+trim_trailing_whitespace = false # Do not trim trailing whitespace in markdown
