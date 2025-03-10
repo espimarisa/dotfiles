@@ -1438,6 +1438,7 @@ xorg-xset
 xorg-xsetroot
 xorg-xwayland
 xorgproto
+xournalpp
 xsettingsd
 xvidcore
 xwaylandvideobridge
