@@ -3,18 +3,17 @@
 filetype: mc
 
 detect:
-    filename: "\\.mc$"
+  filename: "\\.mc$"
 
 rules:
-    - statement: "^(divert|VERSIONID|OSTYPE|DOMAIN|FEATURE|define)"
-    - statement: "^(DAEMON_OPTIONS|MAILER)"
-    - comment:
-        start: "#"
-        end: "$"
-    - comment:
-        start: "dnl"
-        end: "$"
-    - constant.string:
-        start: "`"
-        end: "'"
-
+  - statement: "^(divert|VERSIONID|OSTYPE|DOMAIN|FEATURE|define)"
+  - statement: "^(DAEMON_OPTIONS|MAILER)"
+  - comment:
+      start: "#"
+      end: "$"
+  - comment:
+      start: "dnl"
+      end: "$"
+  - constant.string:
+      start: "`"
+      end: "'"

@@ -4,32 +4,79 @@
 	////////////////////
 
 	"explorer.compactFolders": false, // Disable compact folders
+	"editor.autoIndent": "advanced", // Honor language-specific indention rules
 	"editor.detectIndentation": true, // Automatically detect indentation
 	"editor.bracketPairColorization.enabled": true, // Colorize bracket pairings
-	"editor.fontFamily": "Atkinson Hyperlegible Mono SmBd", // https://www.brailleinstitute.org/freefont/
+	"editor.fontFamily": "Fira Code", // https://github.com/tonsky/FiraCode
 	"editor.fontLigatures": true, // Enables all font ligatures
+	"editor.fontWeight": 500, // Use a slightly bolder font for my crappy eyes
 	"editor.guides.bracketPairs": true, // Enable bracket pairing
 	"editor.guides.bracketPairsHorizontal": "active", // Show horizontal bracket pairing guides
 	"editor.guides.highlightActiveIndentation": true, // Show active indent guide
 	"editor.snippetSuggestions": "bottom", // Puts suggestions at the bottom
 	"editor.suggestSelection": "first", // Always select the first suggestion
 	"editor.tabCompletion": "on", // Insert suggestions with tab
+	"editor.insertSpaces": false, // Use tabs by default
 	"editor.wordWrap": "on", // Enables word wrapping
 	"editor.tabSize": 2, // Sets the default tab size to 2
-	"terminal.integrated.fontFamily": "Fira Code Mono", // https://github.com/tonsky/FiraCode
-	"update.showReleaseNotes": false, // Disables the annoying release notes popup
+	"terminal.integrated.fontFamily": "Fira Code", // https://github.com/tonsky/FiraCode
+	"update.showReleaseNotes": false,
 	"workbench.iconTheme": "material-icon-theme", // PKief.material-icon-theme
+	"workbench.productIconTheme": "material-product-icons", // PKief.material-product-icons
 
 	////////////////////
 	// Formatting options
 	////////////////////
 
-	"biome.enabled": false, // Disable Biome globally, require enabling per-project
-	"eslint.enable": false, // Disable ESLint globally, require enabling per-project
+	"biome.enabled": true, // Enable Biome globally
+	"eslint.enable": true, // Enable ESLint globally
 	"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
+	"editor.formatOnSave": true, // Format files automatically upon saving
 	"files.eol": "\n", // Use unix-style line endings
 	"files.insertFinalNewline": true, // Always insert a blank final line
 	"files.trimTrailingWhitespace": true, // Trim trailing whitespace from files
+
+	// HTML formatting
+	"html.format.enable": true, // Enables the HTML formatter
+	"html.format.extraLiners": "head, body, /html", // Put extra lines in the head, body, and html tags
+	"html.format.indentInnerHtml": true, // Wrap inner HTML elements
+	"html.format.maxPreserveNewLines": 1, // Only preserve 1 line of HTML in formatting
+	"html.format.wrapAttributes": "force-aligned", // Forcefully wrap and vertically align all attributes
+	"html.format.wrapLineLength": 80, // Wrap HTML lines to 80
+
+	// Java formatting
+	"java.format.enabled": true, // Enables the Java formatter
+
+	// Liquid formatting
+	"liquid.format.rules": {
+		"endNewline": true, // Always append an empty newline
+		"indentSize": 2, // Use an indentation size of 2
+		"preserveLine": 1, // Only preserve one line of whitespace
+		"liquid": {
+			"commentIndent": true, // Don't indent Liquid block comments
+			"indentAttribute": true, // Indent HTML attributes
+			"lineBreakSeparator": "before", // Add linebreak seperaters before
+			"normalizeSpacing": true, // Normalize and correct Liquid tag spacing
+			"quoteConvert": "double" // Always use double quotes
+		},
+		"markup": {
+			"attributeCasing": "preserve", // Preserve attribute casing
+			"attributeSort": true, // Enable sorting attributes
+			"commentDelimiters": "consistent", // Consistently apply comment delimiters
+			"commentIndent": true, // Apply indentation to HTML comments
+			"commentNewline": true, // Put HTML comments on newlines
+			"forceAttribute": true, // Force attribute breakups if > 1 are provided
+			"ignoreCSS": true, // Do not format CSS
+			"ignoreJS": true, // Do not format JS
+			"ignoreJSON": true, // Do not format JSON
+			"quoteConvert": "double", // Always use double quotes
+			"selfCloseSpace": true, // Always append closing space in tags
+			"selfCloseSVG": true // Always append closing space in SVG tags
+		}
+	},
+	"liquid.format.validate": true, // Always validate Liquid markup
+
+	// Prettier formatting
 	"prettier.arrowParens": "always", // Always require arrows in parens
 	"prettier.bracketSameLine": true, // Put brackets on the same line
 	"prettier.bracketSpacing": true, // Put spacing between brackets
@@ -38,7 +85,7 @@
 	"prettier.enable": true, // Enables Prettier by default
 	"prettier.experimentalTernaries": true, // Use the new ternary formatting
 	"prettier.htmlWhitespaceSensitivity": "css", // Respect the default value of CSS display property
-	"prettier.proseWrap": "always", // Wrap prose if it exceeds the print width
+	"prettier.proseWrap": "preserve", // Preserve prose wrapping if needed
 	"prettier.quoteProps": "consistent", // If at least one property in an object requires quotes, quote all properties
 	"prettier.trailingComma": "all", // Always append trailing commas
 	"prettier.printWidth": 80, // Max line length of 80
@@ -49,11 +96,26 @@
 	"prettier.useTabs": true, // Use tabs by default
 	"prettier.vueIndentScriptAndStyle": true, // Format code and scripts inside of Vue tags
 
+	// LaTeX formatting
+	"latex-workshop.formatting.latex": "tex-fmt", // Use tex-fmt for formatting
+	"latex-workshop.formatting.tex-fmt.args": [
+		"--nowrap", // do not wrap lines
+		"--usetabs", // format with tabs
+		"--tabsize=1" // format with a tab size of 2
+	],
+
+	// Shell formatting
+	"shellformat.useEditorConfig": true, // Use editorconfig for formatting shell files
+
+	// SASS formatting
+	"sass.format.enabled": true, // Enable Sass formatting
+
 	////////////////////
 	// Extension options
 	////////////////////
 
 	"go.toolsManagement.autoUpdate": true, // Automatically update Go tools
+	"latex-utilities.message.update.show": false, // Disables the annoying LaTeX prompt
 	"python.languageServer": "Pylance", // Use Pylance for the Python language server
 	"redhat.telemetry.enabled": false, // Opts-out of Red Hat spyware
 	"svelte.enable-ts-plugin": true, // Enables TypeScript support for Svelte
@@ -64,50 +126,85 @@
 	// Language options
 	////////////////////
 
-	// LaTeX
-	"latex-utilities.message.update.show": false, // Disables the annoying update prompt
-	"latex-workshop.formatting.latex": "tex-fmt", // Use tex-fmt for formatting
-	"latex-workshop.formatting.tex-fmt.args": [ // Tex-fmt arguments
-		"--nowrap", // do not wrap lines
-		"--usetabs", // format with tabs
-		"--tabsize=1" // format with a tab size of 2
-	],
+	// CSS language options
+	"[css][scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier for formatting CSS/SCSS
+	},
+
+	// HTML language options
+	"html.suggest.html5": true, // Suggest HTML5 tags
+	"[html]": {
+		"editor.defaultFormatter": "vscode.html-language-features" // Use VSCode's HTML formatter
+	},
+
+	// LaTeX language options
 	"[latex]": {
-		"editor.defaultFormatter": "James-Yu.latex-workshop" // Use LaTeX formatter
+		"editor.defaultFormatter": "James-Yu.latex-workshop" // Use LaTeX workshop formatter
 	},
 
-	// Liquid
+	// Liquid language options
 	"[liquid]": {
-		"editor.defaultFormatter": "sissel.shopify-liquid" // Use Liquid formatter
+		"editor.defaultFormatter": "sissel.shopify-liquid",
+		"editor.formatOnSave": true // Use shopify-liquid for formatting Liquid
 	},
 
-	// JS/TS/JSON
-	"[javascript, javascriptreact, typescript, typescriptreact, json, jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
-		"javascript.preferences.importModuleSpecifierEnding": "js", // Always append .js to imports
-		"typescript.preferences.importModuleSpecifier": "relative" // Use the relative import path
+	// JavaScript language options
+	"[javascript][javascriptreact]": {
+		"javascript.preferences.importModuleSpecifierEnding": "js" // Always append .js to imports
 	},
 
-	// Java
-	"java.project.referencedLibraries": ["lib/**/*.jar", "/usr/share/java/**/*.jar"], // Search library path for references
+	// JSON language options
+	"[json][jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier for formatting JSON
+	},
+
+	// Java language options
+	"java.project.referencedLibraries": [
+		"lib/**/*.jar", // Search system lib/ for jar files
+		"/usr/share/java/**/*.jar" // Search usr/share/java for jar files
+	],
 	"[java]": {
-		"editor.defaultFormatter": "redhat.java", // Use Red hat
-		"prettier.tabWidth": 3, // Tab width of 3
-		"editor.tabSize": 3 // Tab size of 3
+		"editor.defaultFormatter": "redhat.java", // Use RedHat's Java formatter
+		"editor.tabSize": 3 // Tab size of 3 following Checkstyle
 	},
 
-	// Python and YAML
-	"[python, yaml]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier
-		"prettier.tabWidth": 4, // PEP8 wants 4 spaces
-		"editor.tabSize": 2, // View as 2 tabs
-		"editor.insertSpaces": true, // PEP8 wants spaces
-		"prettier.useTabs": false // Do not use tabs
+	// Markdown language options
+	"[markdown]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use prettier for formatting Markdown
 	},
 
-	// Shell files
-	"shellformat.useEditorConfig": true,
-	"[dotenv]": {
-		"editor.defaultFormatter": "foxundermoon.shell-format"
+	// Python language options
+	"[python]": {
+		"editor.defaultFormatter": "ms-python.autopep8", // Use AutoPep8 for formatting
+		"editor.tabSize": 4, // Tab size of 4 following PEP-8
+		"editor.insertSpaces": true // Use spaces for Python following PEP-8
+	},
+
+	// SASS language options
+	"[sass]": {
+		"editor.defaultFormatter": "syler.sass-indented" // Use sass-intented for formatting SASS
+	},
+
+	// Shell language options
+	"[dotenv][ignore][properties]": {
+		"editor.defaultFormatter": "foxundermoon.shell-format" // Use shell-format for formatting shell files
+	},
+
+	// TypeScript language options
+	"[typescript][typescriptreact]": {
+		"javascript.preferences.importModuleSpecifierEnding": "js", // Always end imports with .js
+		"typescript.preferences.importModuleSpecifier": "relative" // Use the relative import path always
+	},
+
+	// TOML language options
+	"[toml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use prettier for formatting TOML files
+	},
+
+	// YAML language options
+	"[yaml]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier for formatting YAML files
+		"editor.insertSpaces": true, // Use spaces for YAML as required
+		"editor.tabSize": 2 // Use 2 spaces for YAML as required
 	}
 }

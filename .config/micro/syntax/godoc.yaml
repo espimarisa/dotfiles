@@ -4,14 +4,14 @@
 filetype: godoc
 
 detect:
-    filename: "\\.godoc$"
-    header: package.*import
+  filename: "\\.godoc$"
+  header: package.*import
 
 rules:
-    - preproc: "^[^ ].*"
+  - preproc: "^[^ ].*"
 
-    - comment:
-        start: "//"
-        end: "$"
-        rules:
-            - todo: "(TODO|XXX|FIXME):?"
+  - comment:
+      start: "//"
+      end: "$"
+      rules:
+        - todo: "(TODO|XXX|FIXME):?"

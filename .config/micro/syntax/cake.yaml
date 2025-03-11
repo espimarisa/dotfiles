@@ -1,7 +1,7 @@
 filetype: cake
 detect:
-    filename: "\\.cake$"
+  filename: "\\.cake$"
 
 rules:
-    - include: "csharp"
-    - preproc: "^[[:space:]]*#(addin|break|l(oad)?|module|r(eference)?|tool)"
+  - include: "csharp"
+  - preproc: "^[[:space:]]*#(addin|break|l(oad)?|module|r(eference)?|tool)"
