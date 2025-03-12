@@ -22,6 +22,7 @@
 	"terminal.integrated.fontFamily": "Fira Code", // https://github.com/tonsky/FiraCode
 	"update.showReleaseNotes": false,
 	"workbench.iconTheme": "material-icon-theme", // PKief.material-icon-theme
+	"workbench.colorTheme": "Min Dark",
 	"workbench.productIconTheme": "material-product-icons", // PKief.material-product-icons
 
 	////////////////////
@@ -31,7 +32,7 @@
 	"biome.enabled": true, // Enable Biome globally
 	"eslint.enable": true, // Enable ESLint globally
 	"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
-	"editor.formatOnSave": true, // Format files automatically upon saving
+	"editor.formatOnSave": false, // Format files automatically upon saving
 	"files.eol": "\n", // Use unix-style line endings
 	"files.insertFinalNewline": true, // Always insert a blank final line
 	"files.trimTrailingWhitespace": true, // Trim trailing whitespace from files
@@ -198,7 +199,7 @@
 
 	// TOML language options
 	"[toml]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use prettier for formatting TOML files
+		"editor.defaultFormatter": "tamasfe.even-better-toml" // Use prettier for formatting TOML files
 	},
 
 	// YAML language options
@@ -206,5 +207,10 @@
 		"editor.defaultFormatter": "esbenp.prettier-vscode", // Use prettier for formatting YAML files
 		"editor.insertSpaces": true, // Use spaces for YAML as required
 		"editor.tabSize": 2 // Use 2 spaces for YAML as required
-	}
+	},
+
+	// XML language options
+	"[xml]": {
+		"editor.defaultFormatter": "redhat.vscode-xml" // Use RedHat XML for formatting
+	},
 }
