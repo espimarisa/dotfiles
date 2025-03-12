@@ -37,6 +37,7 @@ aribb24
 ark
 ast-firmware
 at-spi2-core
+atkmm
 attica
 attr
 audit
@@ -108,6 +109,7 @@ cachyos-v4-mirrorlist
 cachyos-wallpapers
 cachyos-zsh-config
 cairo
+cairomm
 cairomm-1.16
 cantarell-fonts
 capitaine-cursors
@@ -269,6 +271,7 @@ gperftools
 gpgme
 gpm
 graphene
+graphicsmagick
 graphite
 graphviz
 grep
@@ -276,7 +279,9 @@ groff
 gsettings-desktop-schemas
 gsettings-system-schemas
 gsfonts
+gsl
 gsm
+gspell
 gssdp
 gssproxy
 gst-libav
@@ -295,6 +300,7 @@ gtk2
 gtk3
 gtk4
 gtkmm-4.0
+gtkmm3
 gtksourceview4
 gts
 guile
@@ -331,6 +337,7 @@ imagemagick
 imath
 imlib2
 inetutils
+inkscape
 intel-gmmlib
 intel-media-driver
 intel-ucode
@@ -493,6 +500,7 @@ lcms2
 ldb
 leancrypto
 less
+lib2geom
 lib32-acl
 lib32-alsa-lib
 lib32-alsa-plugins
@@ -854,6 +862,7 @@ libwebp
 libwireplumber
 libwnck3
 libwpd
+libwpg
 libwps
 libx11
 libx86emu
@@ -1022,6 +1031,7 @@ pahole
 pam
 pambase
 pango
+pangomm
 pangomm-2.48
 papirus-icon-theme
 parallel
@@ -1133,8 +1143,10 @@ purpose5
 pv
 python
 python-annotated-types
+python-appdirs
 python-attrs
 python-autocommand
+python-beautifulsoup4
 python-build
 python-cachecontrol
 python-cachy
@@ -1144,8 +1156,10 @@ python-cffi
 python-chardet
 python-charset-normalizer
 python-cleo
+python-coverage
 python-crashtest
 python-cryptography
+python-cssselect
 python-dbus
 python-defusedxml
 python-distlib
@@ -1176,6 +1190,7 @@ python-markdown
 python-markupsafe
 python-more-itertools
 python-msgpack
+python-numpy
 python-orjson
 python-packaging
 python-pbs-installer
@@ -1196,6 +1211,7 @@ python-pygments
 python-pyproject-hooks
 python-pyqt5
 python-pyqt5-sip
+python-pyserial
 python-pyxdg
 python-rapidfuzz
 python-referencing
@@ -1208,6 +1224,7 @@ python-setproctitle
 python-setuptools
 python-shellingham
 python-six
+python-soupsieve
 python-tomlkit
 python-trove-classifiers
 python-typing_extensions
@@ -1215,6 +1232,7 @@ python-urllib3
 python-virtualenv
 python-webencodings
 python-wheel
+python-zstandard
 qatlib
 qca-qt5
 qca-qt6
@@ -1262,6 +1280,7 @@ qt6-websockets
 qtermwidget
 qtkeychain-qt6
 quazip-qt5
+ragel
 raptor
 rasqal
 rate-mirrors
@@ -1289,6 +1308,7 @@ runc
 rust
 s-nail
 sbc
+scour
 scx-manager
 scx-scheds
 sd
