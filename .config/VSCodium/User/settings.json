@@ -32,7 +32,7 @@
 	"biome.enabled": true, // Enable Biome globally
 	"eslint.enable": true, // Enable ESLint globally
 	"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
-	"editor.formatOnSave": false, // Format files automatically upon saving
+	"editor.formatOnSave": true, // Format files automatically upon saving
 	"files.eol": "\n", // Use unix-style line endings
 	"files.insertFinalNewline": true, // Always insert a blank final line
 	"files.trimTrailingWhitespace": true, // Trim trailing whitespace from files
@@ -151,12 +151,20 @@
 
 	// JavaScript language options
 	"[javascript][javascriptreact]": {
-		"javascript.preferences.importModuleSpecifierEnding": "js" // Always append .js to imports
+		"javascript.preferences.importModuleSpecifierEnding": "js", // Always append .js to imports
+		"editor.codeActionsOnSave": {
+			"source.fixAll.biome": "explicit", // Fix all with Biome automatically
+			"source.organizeImports.biome": "explicit" // Organize imports with Biome automatically
+		}
 	},
 
 	// JSON language options
 	"[json][jsonc]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier for formatting JSON
+		"editor.defaultFormatter": "biomejs.biome", // Use Biome to format
+		"editor.codeActionsOnSave": {
+			"source.fixAll.biome": "explicit", // Fix all with Biome automatically
+			"source.organizeImports.biome": "explicit" // Organize imports with Biome automatically
+		}
 	},
 
 	// Java language options
@@ -187,14 +195,18 @@
 	},
 
 	// Shell language options
-	"[dotenv][ignore][properties]": {
+	"[shellscript][dotenv][ignore][properties]": {
 		"editor.defaultFormatter": "foxundermoon.shell-format" // Use shell-format for formatting shell files
 	},
 
 	// TypeScript language options
 	"[typescript][typescriptreact]": {
 		"javascript.preferences.importModuleSpecifierEnding": "js", // Always end imports with .js
-		"typescript.preferences.importModuleSpecifier": "relative" // Use the relative import path always
+		"typescript.preferences.importModuleSpecifier": "relative", // Use the relative import path always
+		"editor.codeActionsOnSave": {
+			"source.fixAll.biome": "explicit", // Fix all with Biome automatically
+			"source.organizeImports.biome": "explicit" // Organize imports with Biome automatically
+		}
 	},
 
 	// TOML language options
@@ -212,5 +224,5 @@
 	// XML language options
 	"[xml]": {
 		"editor.defaultFormatter": "redhat.vscode-xml" // Use RedHat XML for formatting
-	},
+	}
 }
