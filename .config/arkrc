@@ -9,6 +9,3 @@ openDestinationFolderAfterExtraction=true
 LockSidebar=true
 ShowSidebar=true
 defaultOpenAction=Open
-
-[MainWindow]
-StatusBar=Disabled

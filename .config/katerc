@@ -180,7 +180,6 @@ SetEditor=false
 [MainWindow]
 1920x1080 screen: Height=676
 1920x1080 screen: Width=1137
-1920x1080 screen: Window-Maximized=true
 2194x1234 screen: Height=720
 2194x1234 screen: Width=1016
 

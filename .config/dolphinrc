@@ -1,3 +1,6 @@
+[DetailsMode]
+PreviewSize=16
+
 [General]
 DoubleClickViewAction=none
 RememberOpenedTabs=false
