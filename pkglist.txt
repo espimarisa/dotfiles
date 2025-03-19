@@ -32,6 +32,7 @@ aom
 appimagelauncher
 appmenu-gtk-module
 appstream
+appstream-glib
 appstream-qt
 archlinux-keyring
 argon2
@@ -82,6 +83,7 @@ btop
 btrfs-assistant
 btrfs-progs
 bubblewrap
+bun-bin
 bzip2
 c-ares
 ca-certificates
@@ -163,7 +165,7 @@ dhclient
 dialog
 diffutils
 ding-libs
-discord
+discord-canary
 discount
 djvulibre
 dmidecode
@@ -973,7 +975,6 @@ libmm-glib
 libmng
 libmnl
 libmodplug
-libmoonlight-launcher-bin
 libmpc
 libmpcdec
 libmpeg2
@@ -1194,7 +1195,6 @@ mkinitcpio-firmware
 mobile-broadband-provider-info
 modemmanager
 modemmanager-qt
-moonlight-stable-bin
 moreutils
 mousetweaks
 mpdecimal
@@ -1425,6 +1425,7 @@ python-jaraco.context
 python-jaraco.functools
 python-jaraco.text
 python-jeepney
+python-jinja
 python-jsonschema
 python-jsonschema-specifications
 python-keyring
@@ -1592,6 +1593,7 @@ sonnet5
 sord
 sound-theme-freedesktop
 soundtouch
+soupault
 source-highlight
 spandsp
 spdlog
@@ -1680,6 +1682,7 @@ thinkfan
 thorium-browser-bin
 threadweaver
 tinysparql
+tk
 tlp
 tlp-rdw
 tomlplusplus
@@ -1717,6 +1720,7 @@ v4l-utils
 vala
 vapoursynth
 vcdimager
+vencord-hook
 verdict
 vi
 vid.stab
@@ -1728,6 +1732,7 @@ vmaf
 volume_key
 vpnc
 vscodium
+vscodium-features
 vscodium-marketplace
 vulkan-headers
 vulkan-icd-loader

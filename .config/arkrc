@@ -1,11 +1,13 @@
 [ExtractDialog]
-DirHistory[$e]=$HOME/Downloads/
+DirHistory[$e]=$HOME/Desktop/,$HOME/Downloads/
 
 [Extraction]
-closeAfterExtraction=true
 openDestinationFolderAfterExtraction=true
 
 [General]
 LockSidebar=true
 ShowSidebar=true
 defaultOpenAction=Open
+
+[MainWindow]
+StatusBar=Disabled
