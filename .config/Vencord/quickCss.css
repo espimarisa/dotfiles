@@ -1,5 +1,6 @@
 /* this *does* make codeblocks be non-mono, and i cannot be tasked with fixing it */
 * {
+	/* biome-ignore lint/a11y/useGenericFontNames: you smell */
 	font-family: "Atkinson Hyperlegible Next" !important;
 	font-weight: 400 !important;
 }

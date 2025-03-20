@@ -1,8 +1,10 @@
 [DetailsMode]
-PreviewSize=16
+PreviewSize=64
 
 [General]
 DoubleClickViewAction=none
+EditableUrl=true
+FilterBar=true
 RememberOpenedTabs=false
 ShowFullPath=true
 ShowFullPathInTitlebar=true
