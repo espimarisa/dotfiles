@@ -5,11 +5,19 @@
 
 	"explorer.compactFolders": false, // Disable compact folders
 	"editor.autoIndent": "advanced", // Honor language-specific indention rules
-	"editor.detectIndentation": true, // Automatically detect indentation
 	"editor.bracketPairColorization.enabled": true, // Colorize bracket pairings
+	"editor.detectIndentation": true, // Automatically detect indentation
+	"editor.codeActionsOnSave": {
+		"source.action.useSortedKeys.biome": "explicit", // Sort biome imports
+		"source.addMissingImports.ts": "explicit", // Add missing import extensions
+		"source.biome": "explicit", // Run biome
+		"source.fixAll.ts": "explicit", // Fix all on explicit save
+		"source.organizeImports.biome": "explicit", // Organize biome imports
+		"source.removeUnusedImports": "explicit" // Remove unused imports
+	},
 	"editor.fontFamily": "Fira Code", // https://github.com/tonsky/FiraCode
 	"editor.fontLigatures": true, // Enables all font ligatures
-	"editor.fontWeight": 500, // Use a slightly bolder font for my crappy eyes
+	"editor.fontWeight": 550, // Use a slightly bolder font for my crappy eyes
 	"editor.guides.bracketPairs": true, // Enable bracket pairing
 	"editor.guides.bracketPairsHorizontal": "active", // Show horizontal bracket pairing guides
 	"editor.guides.highlightActiveIndentation": true, // Show active indent guide
@@ -19,17 +27,37 @@
 	"editor.insertSpaces": false, // Use tabs by default
 	"editor.wordWrap": "on", // Enables word wrapping
 	"editor.tabSize": 2, // Sets the default tab size to 2
+	"files.autoSave": "afterDelay", // Enable auto-saving after a delay
+	"files.exclude": {
+		"**/*.tsbuildinfo": true,
+		"**/.cache": true,
+		"**/.DS_Store": true,
+		"**/.git": true,
+		"**/.hg": true,
+		"**/.svn": true,
+		"**/.turbo": true,
+		"**/_site": true,
+		"**/dist": true,
+		"**/node_modules": true,
+		"**/Thumbs.db": true
+	},
+	"files.autoSaveDelay": 5000, // Auto save after 5 seconds of inactivity
 	"terminal.integrated.fontFamily": "Fira Code", // https://github.com/tonsky/FiraCode
-	"update.showReleaseNotes": false,
-	"workbench.colorTheme": "GitHub Dark Dimmed",
-	"workbench.iconTheme": "material-icon-theme",
+	"update.showReleaseNotes": false, // miguelsolorio.min-theme
+	"workbench.colorTheme": "Default Dark Modern", // Use inbuilt default dark
+	"window.titleBarStyle": "native", // Use native titlebar
+	"workbench.iconTheme": "material-icon-theme", // PKief.material-icon-theme
 	"workbench.productIconTheme": "material-product-icons", // PKief.material-product-icons
+	"workbench.startupEditor": "none", // Don't open anything upon startup
 
 	////////////////////
 	// Formatting options
 	////////////////////
 
 	"biome.enabled": true, // Enable Biome globally
+	"biome.experimental.rename": true, // Enable biome renaming support
+	"biome.requireConfigFile": true, // Require a config for using biome
+	"biome.lsp.bin": "~/.bun/bin/biome", // Use globally installed Biome
 	"eslint.enable": true, // Enable ESLint globally
 	"editor.defaultFormatter": "esbenp.prettier-vscode", // Uses Prettier as the default formatter
 	"editor.formatOnSave": true, // Format files automatically upon saving
@@ -42,14 +70,15 @@
 	"html.format.extraLiners": "head, body, /html", // Put extra lines in the head, body, and html tags
 	"html.format.indentInnerHtml": true, // Wrap inner HTML elements
 	"html.format.maxPreserveNewLines": 1, // Only preserve 1 line of HTML in formatting
+	"html.format.templating": true, // Enable formatting templating engines
 	"html.format.wrapAttributes": "force-aligned", // Forcefully wrap and vertically align all attributes
 	"html.format.wrapLineLength": 80, // Wrap HTML lines to 80
-	"html.format.templating": true,
 
 	// Java formatting
 	"java.format.enabled": true, // Enables the Java formatter
 
 	// Liquid formatting
+	"liquid.format.validate": true, // Always validate Liquid markup
 	"liquid.format.rules": {
 		"endNewline": true, // Always append an empty newline
 		"indentSize": 2, // Use an indentation size of 2
@@ -76,7 +105,6 @@
 			"selfCloseSVG": true // Always append closing space in SVG tags
 		}
 	},
-	"liquid.format.validate": true, // Always validate Liquid markup
 
 	// Prettier formatting
 	"prettier.arrowParens": "always", // Always require arrows in parens
@@ -84,7 +112,7 @@
 	"prettier.bracketSpacing": true, // Put spacing between brackets
 	"prettier.embeddedLanguageFormatting": "auto", // Attempt to format embedded languages
 	"prettier.endOfLine": "lf", // Use LF by default
-	"prettier.enable": true, // Enables Prettier by default
+	"prettier.enable": true, // Enable prettier by default
 	"prettier.experimentalTernaries": true, // Use the new ternary formatting
 	"prettier.htmlWhitespaceSensitivity": "css", // Respect the default value of CSS display property
 	"prettier.proseWrap": "preserve", // Preserve prose wrapping if needed
@@ -129,7 +157,7 @@
 
 	// CSS language options
 	"[css][scss]": {
-		"editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier for formatting CSS/SCSS
+		"editor.defaultFormatter": "biomejs.biome" // Use Biome for formatting CSS/SCSS
 	},
 
 	// HTML language options
@@ -145,26 +173,20 @@
 
 	// Liquid language options
 	"[liquid]": {
-		"editor.defaultFormatter": "sissel.shopify-liquid",
-		"editor.formatOnSave": true // Use shopify-liquid for formatting Liquid
+		"editor.insertSpaces": true, // Liquid likes spaces for some reason
+		"editor.defaultFormatter": "sissel.shopify-liquid" // Use shopify-liquid as the formatter
 	},
 
 	// JavaScript language options
+	"javascript.updateImportsOnFileMove.enabled": "always", // Update imports when files are moved or renamed
 	"[javascript][javascriptreact]": {
-		"javascript.preferences.importModuleSpecifierEnding": "js", // Always append .js to imports
-		"editor.codeActionsOnSave": {
-			"source.fixAll.biome": "explicit", // Fix all with Biome automatically
-			"source.organizeImports.biome": "explicit" // Organize imports with Biome automatically
-		}
+		"editor.defaultFormatter": "biomejs.biome", // Use Biome to format
+		"javascript.preferences.importModuleSpecifierEnding": "js" // Always append .js to imports
 	},
 
 	// JSON language options
 	"[json][jsonc]": {
-		"editor.defaultFormatter": "biomejs.biome", // Use Biome to format
-		"editor.codeActionsOnSave": {
-			"source.fixAll.biome": "explicit", // Fix all with Biome automatically
-			"source.organizeImports.biome": "explicit" // Organize imports with Biome automatically
-		}
+		"editor.defaultFormatter": "biomejs.biome" // Use Biome to format
 	},
 
 	// Java language options
@@ -174,7 +196,7 @@
 	],
 	"[java]": {
 		"editor.defaultFormatter": "redhat.java", // Use RedHat's Java formatter
-		"editor.tabSize": 3 // Tab size of 3 following Checkstyle
+		"editor.indentSize": 3 // Tab size of 3 following Checkstyle
 	},
 
 	// Markdown language options
@@ -191,6 +213,7 @@
 
 	// SASS language options
 	"[sass]": {
+		"editor.insertSpaces": true, // SASS needs spaces
 		"editor.defaultFormatter": "syler.sass-indented" // Use sass-intented for formatting SASS
 	},
 
@@ -200,13 +223,11 @@
 	},
 
 	// TypeScript language options
+	"typescript.updateImportsOnFileMove.enabled": "always", // Update imports when files are moved or renamed
 	"[typescript][typescriptreact]": {
+		"editor.defaultFormatter": "biomejs.biome", // Use biome to format
 		"javascript.preferences.importModuleSpecifierEnding": "js", // Always end imports with .js
-		"typescript.preferences.importModuleSpecifier": "relative", // Use the relative import path always
-		"editor.codeActionsOnSave": {
-			"source.fixAll.biome": "explicit", // Fix all with Biome automatically
-			"source.organizeImports.biome": "explicit" // Organize imports with Biome automatically
-		}
+		"typescript.preferences.importModuleSpecifier": "relative" // Use the relative import path always
 	},
 
 	// TOML language options

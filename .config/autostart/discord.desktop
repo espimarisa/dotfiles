@@ -2,13 +2,13 @@
 Categories=Network;InstantMessaging;
 Comment[en_US]=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
 Comment=All-in-one voice and text chat for gamers that's free, secure, and works on both your desktop and phone.
-Exec=env XDG_CURRENT_DESKTOP=KDE5 /usr/bin/discord-canary --start-minimized
+Exec=/usr/bin/discord --start-minimized
 GenericName[en_US]=Internet Messenger
 GenericName=Internet Messenger
-Icon=discord-canary
+Icon=discord
 MimeType=
-Name[en_US]=Discord Canary
-Name=Discord Canary
+Name[en_US]=Discord
+Name=Discord
 NoDisplay=false
 Path=/usr/bin
 StartupNotify=true

@@ -12,11 +12,11 @@ adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-jp-fonts
 adobe-source-han-sans-kr-fonts
 adwaita-cursors
+adwaita-fonts
 adwaita-icon-theme
 adwaita-icon-theme-legacy
 aha
 aic94xx-firmware
-alacritty
 alsa-card-profiles
 alsa-firmware
 alsa-lib
@@ -90,7 +90,6 @@ ca-certificates
 ca-certificates-mozilla
 ca-certificates-utils
 cabextract
-cachy-browser
 cachyos-alacritty-config
 cachyos-ananicy-rules
 cachyos-emerald-kde-theme-git
@@ -165,7 +164,7 @@ dhclient
 dialog
 diffutils
 ding-libs
-discord-canary
+discord
 discount
 djvulibre
 dmidecode
@@ -225,7 +224,6 @@ fftw
 file
 filesystem
 findutils
-firefox
 fish
 fish-autopair
 fish-pure-prompt
@@ -880,6 +878,7 @@ libcolord
 libcups
 libcupsfilters
 libdaemon
+libdatachannel
 libdatrie
 libdbusmenu-glib
 libdbusmenu-gtk2
@@ -947,6 +946,7 @@ libisl
 libixion
 libjpeg-turbo
 libjpeg6-turbo
+libjuice
 libjxl
 libkcddb
 libkdcraw
@@ -1005,6 +1005,7 @@ libogg
 libopenmpt
 libopenraw
 liborcus
+libp11
 libp11-kit
 libpagemaker
 libpaper
@@ -1176,6 +1177,7 @@ mallard-ducktype
 man-db
 man-pages
 maven
+mbedtls
 mbedtls2
 md4c
 mdadm
@@ -1240,6 +1242,7 @@ nss-mdns
 ntp
 numactl
 nvm
+obs-studio
 ocean-sound-theme
 ocl-icd
 octopi
@@ -1714,6 +1717,7 @@ upd72020x-fw
 upower
 usb_modeswitch
 usbutils
+uthash
 util-linux
 util-linux-libs
 v4l-utils
