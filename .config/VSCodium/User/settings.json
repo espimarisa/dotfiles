@@ -37,15 +37,14 @@
 		"**/.svn": true,
 		"**/.turbo": true,
 		"**/_site": true,
-		"**/dist": true,
 		"**/node_modules": true,
 		"**/Thumbs.db": true
 	},
 	"files.autoSaveDelay": 5000, // Auto save after 5 seconds of inactivity
 	"terminal.integrated.fontFamily": "Fira Code", // https://github.com/tonsky/FiraCode
 	"update.showReleaseNotes": false, // miguelsolorio.min-theme
-	"workbench.colorTheme": "Default Dark Modern", // Use inbuilt default dark
-	"window.titleBarStyle": "native", // Use native titlebar
+	"workbench.colorTheme": "GitHub Dark", // Use inbuilt default dark
+	// "window.titleBarStyle": "native", // Use native titlebar
 	"workbench.iconTheme": "material-icon-theme", // PKief.material-icon-theme
 	"workbench.productIconTheme": "material-product-icons", // PKief.material-product-icons
 	"workbench.startupEditor": "none", // Don't open anything upon startup
@@ -72,7 +71,7 @@
 	"html.format.maxPreserveNewLines": 1, // Only preserve 1 line of HTML in formatting
 	"html.format.templating": true, // Enable formatting templating engines
 	"html.format.wrapAttributes": "force-aligned", // Forcefully wrap and vertically align all attributes
-	"html.format.wrapLineLength": 80, // Wrap HTML lines to 80
+	"html.format.wrapLineLength": 120, // Wrap HTML lines to 120
 
 	// Java formatting
 	"java.format.enabled": true, // Enables the Java formatter
@@ -118,7 +117,7 @@
 	"prettier.proseWrap": "preserve", // Preserve prose wrapping if needed
 	"prettier.quoteProps": "consistent", // If at least one property in an object requires quotes, quote all properties
 	"prettier.trailingComma": "all", // Always append trailing commas
-	"prettier.printWidth": 80, // Max line length of 80
+	"prettier.printWidth": 120, // Max line length of 120
 	"prettier.tabWidth": 2, // Tab width of 2
 	"prettier.semi": true, // Always require semicolons
 	"prettier.singleQuote": false, // Do not use singlequotes
@@ -249,6 +248,7 @@
 
 	//
 	// Operator italics
+	// This allows for the use of italics in operators (jankily)
 	//
 
 	"editor.tokenColorCustomizations": {
@@ -384,5 +384,5 @@
 				}
 			]
 		}
-	}
+	},
 }

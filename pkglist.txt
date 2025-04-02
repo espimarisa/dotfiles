@@ -1,6 +1,7 @@
 7zip
 a52dec
 aalib
+aardvark-dns
 abseil-cpp
 accounts-qml-module
 accountsservice
@@ -44,6 +45,7 @@ at-spi2-core
 atkmm
 attica
 attr
+audiocd-kio
 audit
 autoconf
 autoconf-archive
@@ -118,6 +120,7 @@ cairomm
 cairomm-1.16
 cantarell-fonts
 capitaine-cursors
+catatonit
 cblas
 ccache
 cdparanoia
@@ -132,10 +135,15 @@ cifs-utils
 clang
 clinfo
 clucene
+clutter
+clutter-gtk
 cmake
 cmark
+cogl
 compiler-rt
+conmon
 containerd
+containers-common
 convertlit
 coreutils
 cppdap
@@ -177,6 +185,7 @@ docker
 docker-compose
 dolphin
 dolphin-emu
+dolphin-plugins
 dosfstools
 dotconf
 dotnet-host
@@ -203,10 +212,12 @@ enchant
 enet
 espeak-ng
 ethtool
+exempi
 exfatprogs
 exiv2
 expac
 expat
+extra-cmake-modules
 eza
 f2fs-tools
 faac
@@ -293,7 +304,10 @@ glibmm-2.68
 glslang
 glu
 gmp
+gnome-autoar
 gnome-common
+gnome-desktop-4
+gnome-desktop-common
 gnome-disk-utility
 gnulib-l10n
 gnupg
@@ -322,6 +336,7 @@ gspell
 gssdp
 gssproxy
 gst-libav
+gst-plugin-gtk
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-bad-libs
@@ -331,6 +346,7 @@ gst-plugins-good
 gst-plugins-ugly
 gstreamer
 gtest
+gthumb
 gtk-doc
 gtk-update-icon-cache
 gtk2
@@ -343,9 +359,12 @@ gts
 guile
 gumbo-parser
 gupnp
+gupnp-dlna
 gupnp-igd
 gutenprint
 gvfs
+gvfs-afc
+gvfs-gphoto2
 gwenview
 gzip
 harfbuzz
@@ -551,7 +570,9 @@ hyfetch
 hyphen
 i2c-tools
 iana-etc
+icoutils
 icu
+ifuse
 ijs
 imagemagick
 imath
@@ -624,12 +645,14 @@ kdbusaddons5
 kde-cli-tools
 kde-gtk-config
 kdeclarative
+kdeconnect
 kdecoration
 kded
 kded5
 kdegraphics-mobipocket
 kdegraphics-thumbnailers
 kdeplasma-addons
+kdesdk-thumbnailers
 kdesu
 kdialog
 kdnssd
@@ -651,6 +674,7 @@ kiconthemes
 kiconthemes5
 kidletime
 kimageannotator
+kimageformats
 kinfocenter
 kinit
 kio
@@ -674,6 +698,7 @@ knewstuff
 knotifications
 knotifications5
 knotifyconfig
+kompare
 konsole
 kotlin
 kpackage
@@ -875,6 +900,7 @@ libclc
 libcloudproviders
 libcmis
 libcolord
+libcue
 libcups
 libcupsfilters
 libdaemon
@@ -928,6 +954,7 @@ libgpg-error
 libgphoto2
 libgsf
 libgudev
+libgxps
 libhandy
 libheif
 libice
@@ -942,6 +969,7 @@ libimobiledevice-glue
 libinih
 libinput
 libinstpatch
+libiptcdata
 libisl
 libixion
 libjpeg-turbo
@@ -949,8 +977,10 @@ libjpeg6-turbo
 libjuice
 libjxl
 libkcddb
+libkcompactdisc
 libkdcraw
 libkexiv2
+libkomparediff2
 libksane
 libksba
 libkscreen
@@ -984,6 +1014,7 @@ libmusicbrainz5
 libmwaw
 libmypaint
 libmysofa
+libnautilus-extension
 libndp
 libnet
 libnetfilter_conntrack
@@ -1005,6 +1036,7 @@ libogg
 libopenmpt
 libopenraw
 liborcus
+libosinfo
 libp11
 libp11-kit
 libpagemaker
@@ -1018,6 +1050,8 @@ libplacebo
 libplasma
 libplist
 libpng
+libportal
+libportal-gtk4
 libppd
 libproxy
 libpsl
@@ -1159,6 +1193,7 @@ llvm
 llvm-libs
 lm_sensors
 lmdb
+localsearch
 logrotate
 lpsolve
 lsb-release
@@ -1182,7 +1217,6 @@ mbedtls2
 md4c
 mdadm
 media-player-info
-meld
 mesa
 mesa-utils
 meta-group-texlive-most
@@ -1210,10 +1244,13 @@ mypaint-brushes1
 nano
 nano-syntax-highlighting
 nasm
+nautilus
+nautilus-python
 ncurses
 neon
 net-snmp
 net-tools
+netavark
 netctl
 netpbm
 netstandard-targeting-pack
@@ -1266,6 +1303,7 @@ openxr
 opus
 orc
 orca
+osinfo-db
 p11-kit
 pacman
 pacman-contrib
@@ -1282,6 +1320,7 @@ parallel
 parted
 partitionmanager
 paru
+passt
 patch
 pavucontrol
 pavucontrol-qt
@@ -1361,6 +1400,8 @@ plasma-workspace-wallpapers
 plasma5support
 plocate
 plymouth
+podman
+podman-compose
 polkit
 polkit-kde-agent
 polkit-qt5
@@ -1405,6 +1446,7 @@ python-cffi
 python-chardet
 python-charset-normalizer
 python-cleo
+python-click
 python-coverage
 python-crashtest
 python-cryptography
@@ -1414,6 +1456,7 @@ python-defusedxml
 python-distlib
 python-distro
 python-docopt
+python-dotenv
 python-dulwich
 python-fastjsonschema
 python-filelock
@@ -1482,6 +1525,7 @@ python-urllib3
 python-virtualenv
 python-webencodings
 python-wheel
+python-yaml
 python-zstandard
 qca-qt5
 qca-qt6
@@ -1536,6 +1580,7 @@ raptor
 rasqal
 rate-mirrors
 rav1e
+raw-thumbnailer
 rbenv
 re2
 readline
@@ -1611,6 +1656,7 @@ sqlite
 squashfuse
 sratom
 srt
+sshfs
 stack
 startup-notification
 steam
@@ -1689,6 +1735,7 @@ tk
 tlp
 tlp-rdw
 tomlplusplus
+totem-pl-parser
 tpm2-tss
 tslib
 ttf-atkinson-hyperlegible
@@ -1716,6 +1763,7 @@ unzip
 upd72020x-fw
 upower
 usb_modeswitch
+usbmuxd
 usbutils
 uthash
 util-linux
@@ -1773,6 +1821,7 @@ xdg-dbus-proxy
 xdg-desktop-portal
 xdg-desktop-portal-kde
 xdg-user-dirs
+xdg-user-dirs-gtk
 xdg-utils
 xf86-input-libinput
 xf86-video-amdgpu
