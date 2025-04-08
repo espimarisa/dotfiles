@@ -1,38 +1,22 @@
 {
-	"autosu": true,
-	"backup": true,
-	"colorcolum": 80,
-	"colorscheme": "dukedark-tc",
-	"permbackup": true,
-	"reload": "prompt",
-	"rmtrailingws": true,
-	"saveundo": true,
-	"scrollbar": true,
-	"softwrap": true,
-	"syntax": true,
-	"tabsize": 2,
-	"wordwrap": true,
-
-	"*.md": {
-		"rmtrailingws": false
-	},
-	"*.liquid": {
-		"tabsize": 2,
-		"tabstospaces": true
-	},
-	"*.yml": {
-		"tabsize": 2,
-		"tabstospaces": true
-	},
-	"*.yaml": {
-		"tabsize": 2,
-		"tabstospaces": true
-	},
-	"*.py": {
-		"tabsize": 4,
-		"tabstospaces": true
-	},
-	"*.java": {
-		"tabsize": 3
-	}
+  "autosu": true,
+  "backup": true,
+  "colorcolum": 80,
+  "colorscheme": "dukedark-tc",
+  "permbackup": true,
+  "reload": "prompt",
+  "rmtrailingws": true,
+  "saveundo": true,
+  "scrollbar": true,
+  "softwrap": true,
+  "syntax": true,
+  "tabsize": 2,
+  "wordwrap": true,
+  "*.py": {
+    "tabsize": 4,
+    "tabstospaces": true
+  },
+  "*.java": {
+    "tabsize": 3
+  }
 }

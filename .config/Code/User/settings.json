@@ -1,0 +1,209 @@
+{
+  //
+  // Language options
+  //
+
+  "[css][scss]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.indentSize": 3
+  },
+  "java.format.enabled": true,
+  "java.project.referencedLibraries": [
+    "/usr/share/java/**/*.jar",
+    "lib/**/*.jar"
+  ],
+  "[javascript][javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "javascript.preferences.importModuleSpecifierEnding": "js"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+  "latex-utilities.message.update.show": false,
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "latex-workshop.formatting.tex-fmt.args": [
+    "--indent",
+    "--indent-size",
+    "--nowrap",
+    "2"
+  ],
+  "[liquid]": {
+    "editor.defaultFormatter": "Shopify.theme-check-vscode",
+    "editor.insertSpaces": true
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4
+  },
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented",
+    "editor.insertSpaces": true
+  },
+  "sass.format.enabled": true,
+  "[shellscript][dotenv][ignore][properties]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+  "shellformat.useEditorConfig": true,
+  "[svelte]": {
+    "typescript.suggest.enabled": true
+  },
+  "svelte.enable-ts-plugin": true,
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+  "[typescript][typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome",
+    "javascript.preferences.importModuleSpecifierEnding": "js",
+    "typescript.preferences.importModuleSpecifier": "project-relative"
+  },
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[yaml]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2
+  },
+
+  //
+  // Formatter options
+  //
+
+  "biome.enabled": true,
+  "biome.experimental.rename": true,
+  "biome.lsp.bin": "~/.bun/bin/biome",
+  "biome.requireConfigFile": true,
+  "html.format.enable": true,
+  "html.format.extraLiners": "head, body, /html",
+  "html.format.indentInnerHtml": true,
+  "html.format.maxPreserveNewLines": 1,
+  "html.format.templating": true,
+  "html.format.wrapAttributes": "force-aligned",
+  "html.format.wrapAttributesIndentSize": 2,
+  "html.format.wrapLineLength": 80,
+  "prettier.arrowParens": "always",
+  "prettier.bracketSameLine": true,
+  "prettier.bracketSpacing": true,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.enable": true,
+  "prettier.endOfLine": "lf",
+  "prettier.experimentalTernaries": true,
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.printWidth": 80,
+  "prettier.proseWrap": "preserve",
+  "prettier.quoteProps": "consistent",
+  "prettier.semi": true,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "all",
+  "prettier.useEditorConfig": true,
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": true,
+
+  //
+  // Editor options
+  //
+
+  "dotenv.enableAutocloaking": false,
+  "editor.autoIndent": "full",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.codeActionsOnSave": {
+    "source.action.useSortedKeys.biome": "explicit",
+    "source.addMissingImports.ts": "explicit",
+    "source.biome": "explicit",
+    "source.fixAll.ts": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.detectIndentation": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 500,
+  "editor.formatOnSave": true,
+  "github.copilot.enable": {
+    "*": false,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "editor.guides.bracketPairs": true,
+  "editor.guides.bracketPairsHorizontal": "active",
+  "editor.guides.highlightActiveIndentation": true,
+  "editor.insertSpaces": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "eslint.enable": true,
+  "explorer.compactFolders": false,
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "files.eol": "\n",
+  "files.exclude": {
+    "**/*.tsbuildinfo": true,
+    "**/.cache": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.svelte-kit": true,
+    "**/.svn": true,
+    "**/.turbo": true,
+    "**/_site": true,
+    "**/build": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/out": true,
+    "**/temp": true,
+    "**/Thumbs.db": true,
+    "**/tmp": true,
+    "**/vendor": true
+  },
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "update.showReleaseNotes": false,
+  "window.titleBarStyle": "custom",
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.startupEditor": "none",
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    ".env*": "dotenv"
+  },
+  "editor.tokenColorCustomizations": {
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
+          }
+        }
+      ]
+    },
+    "textMateRules": []
+  }
+}
