@@ -1,7 +1,7 @@
 # dotfiles
 
-Useful scripts and configuration files from my CachyOS Linux installation(s).
+useful scripts and configuration files of mine.
 
-## License
+## license
 
 [MIT](LICENSE)
