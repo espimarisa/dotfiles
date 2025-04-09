@@ -1,25 +1,40 @@
+# Normalize
 * text=auto
 
-*.bash text eol=lf
-*.css text diff=css
-*.htm text diff=html
-*.html text diff=html
-*.scss text diff=css
-*.sh text eol=lf
-*.markdown text diff=markdown
-*.md text diff=markdown
-*.lock text -diff
-tsconfig.json linguist-language=JSON-with-Comments
-
+# Binaries
+*.bin binary
+*.bmp binary
+*.bpg binary
+*.bz2 binary
+*.docx binary
 *.gif binary
 *.ico binary
-*.jpg binary
 *.jpeg binary
+*.jpg binary
+*.json binary
+*.mp3 binary
+*.mp4 binary
+*.ogg binary
+*.pdf binary
 *.png binary
-*.svg text
+*.svg binary
+*.tar binary
+*.tgz binary
 *.webp binary
-*.ttf binary
-*.eot binary
-*.otf binary
-*.woff binary
-*.woff2 binary
+*.zip binary
+*.7z binary
+*.exe binary
+*.dll binary
+
+# Lockfiles
+package-lock.json text
+yarn.lock text
+pnpm-lock.yaml text
+poetry.lock text
+Pipfile.lock text
+Cargo.lock text
+
+# Windows
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf

@@ -12,6 +12,7 @@ gpgsign = true
 
 [core]
 editor = micro
+excludesfile = ~/.gitignore
 
 [gpg]
 program = gpg

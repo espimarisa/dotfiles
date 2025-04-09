@@ -60,6 +60,7 @@ base-devel
 bash
 bash-completion
 bat
+bc
 bind
 binutils
 bison
@@ -118,6 +119,7 @@ cairomm-1.16
 cantarell-fonts
 capitaine-cursors
 catatonit
+cbindgen
 cblas
 ccache
 cdparanoia
@@ -157,6 +159,7 @@ db5.3
 dbus
 dbus-broker
 dbus-broker-units
+dbus-glib
 dbus-units
 dconf
 ddcutil
@@ -192,6 +195,7 @@ dotnet-targeting-pack
 double-conversion
 duf
 duktape
+dump_syms
 dvd+rw-tools
 dvisvgm
 e2fsprogs
@@ -372,6 +376,7 @@ icu69-bin
 ifuse
 ijs
 imagemagick
+imake
 imath
 imlib2
 inetutils
@@ -1014,6 +1019,7 @@ mbedtls2
 md4c
 mdadm
 media-player-info
+mercurial
 mesa
 mesa-utils
 meta-group-texlive-most
@@ -1589,6 +1595,10 @@ vulkan-icd-loader
 vulkan-intel
 vulkan-radeon
 vulkan-tools
+wasi-compiler-rt
+wasi-libc
+wasi-libc++
+wasi-libc++abi
 wavpack
 wayland
 wayland-utils
@@ -1630,6 +1640,7 @@ xmlsec
 xorg-fonts-encodings
 xorg-server
 xorg-server-common
+xorg-server-xvfb
 xorg-setxkbmap
 xorg-xauth
 xorg-xdpyinfo
@@ -1655,6 +1666,7 @@ xz
 yadm
 yaml-cpp
 yarn
+yasm
 yelp-tools
 yelp-xsl
 yt-dlp
@@ -1663,6 +1675,7 @@ zbar
 zenity
 zeromq
 zimg
+zip
 zix
 zlib-ng
 zlib-ng-compat
