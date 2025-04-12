@@ -238,7 +238,6 @@ fftw
 file
 filesystem
 findutils
-firefox
 flac
 flatpak
 flex
@@ -538,6 +537,7 @@ kwindowsystem5
 kxmlgui
 kxmlgui5
 l-smash
+lact
 lame
 lapack
 layer-shell-qt
@@ -839,6 +839,7 @@ libopenmpt
 libopenraw
 liborcus
 libosinfo
+libotr
 libp11
 libp11-kit
 libpagemaker
@@ -1047,8 +1048,6 @@ mypaint-brushes1
 nano
 nano-syntax-highlighting
 nasm
-nautilus
-nautilus-python
 ncurses
 neon
 net-snmp
@@ -1216,6 +1215,7 @@ portaudio
 postgresql
 postgresql-libs
 potrace
+power-profiles-daemon
 powerdevil
 powerline-fonts
 ppp
@@ -1536,8 +1536,6 @@ thorium-browser-bin
 threadweaver
 tinysparql
 tk
-tlp
-tlp-rdw
 tomlplusplus
 totem-pl-parser
 tpm2-tss
@@ -1576,6 +1574,7 @@ util-linux
 util-linux-libs
 v4l-utils
 vala
+valkey
 vapoursynth
 vcdimager
 vencord-hook
