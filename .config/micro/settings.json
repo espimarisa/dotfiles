@@ -1,22 +1,18 @@
 {
+  "*.java": {
+    "tabsize": 3
+  },
+  "*.py": {
+    "tabsize": 4
+  },
   "autosu": true,
-  "backup": true,
-  "colorcolum": 80,
+  "colorcolumn": 80,
   "colorscheme": "dukedark-tc",
   "permbackup": true,
-  "reload": "prompt",
   "rmtrailingws": true,
   "saveundo": true,
   "scrollbar": true,
   "softwrap": true,
-  "syntax": true,
   "tabsize": 2,
-  "wordwrap": true,
-  "*.py": {
-    "tabsize": 4,
-    "tabstospaces": true
-  },
-  "*.java": {
-    "tabsize": 3
-  }
+  "tabstospaces": true
 }

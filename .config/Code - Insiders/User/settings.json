@@ -1,0 +1,380 @@
+// Installed Extensions:
+//
+// 1yib.svelte-bundle
+// aaron-bond.better-comments
+// ardenivanov.svelte-intellisense
+// biomejs.biome
+// bradlc.vscode-tailwindcss
+// davidanson.vscode-markdownlint
+// dbaeumer.vscode-eslint
+// docker.docker
+// editorconfig.editorconfig
+// esbenp.prettier-vscode
+// fivethree.vscode-svelte-snippets
+// foxundermoon.shell-format
+// github.github-vscode-theme
+// github.vscode-github-actions
+// golang.go
+// james-yu.latex-workshop
+// jgclark.vscode-todo-highlight
+// kasraghoreyshi.json-type-generator
+// leonardssh.vscord
+// maattdd.gitless
+// ms-azuretools.vscode-docker
+// ms-python.black-formatter
+// ms-python.debugpy
+// ms-python.python
+// ms-python.vscode-pylance
+// ms-vscode.cpptools
+// ms-vsliveshare.vsliveshare
+// naumovs.color-highlight
+// oven.bun-vscode
+// pkief.material-icon-theme
+// pkief.material-product-icons
+// redhat.java
+// redhat.vscode-xml
+// redhat.vscode-yaml
+// redis.redis-for-vscode
+// richie5um2.vscode-sort-json
+// sissel.shopify-liquid
+// socheatsok78-lab.dotenv-vscode-stripped
+// svelte.svelte-vscode
+// syler.sass-indented
+// tamasfe.even-better-toml
+// tecosaur.latex-utilities
+// usernamehw.errorlens
+// vunguyentuan.vscode-postcss
+// wakatime.vscode-wakatime
+// yzhang.markdown-all-in-one
+// zascal.css-sorter
+//
+{
+  //
+  // Language Specific Configuration (Overrides) - Sorted by Language Key
+  //
+
+  "[css][scss]": {
+    "editor.defaultFormatter": "biomejs.biome" // Use Biome formatter for CSS and SCSS files.
+  },
+
+  "[dotenv][ignore][properties][shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format" // Use shell-format for these file types.
+  },
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features" // Use built-in HTML formatter.
+  },
+
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java", // Use Red Hat Java formatter.
+    "editor.indentSize": 3 // Override global indent size to 3 for Java.
+  },
+
+  "[javascript][javascriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome", // Use Biome formatter for JS/JSX.
+    "javascript.preferences.importModuleSpecifierEnding": "js" // Ensure module specifiers end with '.js'.
+  },
+
+  "[json][jsonc]": {
+    "editor.defaultFormatter": "biomejs.biome" // Use Biome formatter for JSON/JSONC.
+  },
+
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop" // Use LaTeX Workshop formatter.
+  },
+
+  "[liquid]": {
+    "editor.defaultFormatter": "sissel.shopify-liquid" // Use Shopify Liquid formatter.
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter", // Use Black formatter for Python.
+    "editor.tabSize": 4 // Override global tab size to 4 for Python.
+  },
+
+  "[sass]": {
+    "editor.defaultFormatter": "syler.sass-indented" // Use Sass Indented formatter.
+  },
+
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode" // Use Svelte extension formatter.
+  },
+
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml" // Use Even Better TOML formatter.
+  },
+
+  "[typescript][typescriptreact]": {
+    "editor.defaultFormatter": "biomejs.biome", // Use Biome formatter for TS/TSX.
+    "typescript.preferences.importModuleSpecifier": "project-relative", // Prefer project-relative import paths.
+    "typescript.preferences.importModuleSpecifierEnding": "js", // Ensure module specifiers end with '.js'.
+    "typescript.preferences.useAliasesForRenames": true // Use aliases when renaming files if available.
+  },
+
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml" // Use Red Hat XML formatter.
+  },
+
+  "[yaml]": {
+    "editor.tabSize": 2 // Override global tab size to 2 for YAML.
+  },
+
+  //
+  // Biome Extension Settings
+  //
+
+  "biome.enabled": true, // Enable the Biome formatter/linter extension.
+  "biome.experimental.rename": true, // Enable Biome's experimental rename functionality.
+  "biome.lsp.bin": "~/.bun/bin/biome", // Specify the path to the Biome language server binary.
+  "biome.requireConfigFile": true, // Require a biome.json configuration file to be present.
+
+  //
+  // Editor Settings
+  //
+
+  "editor.codeActionsOnSave": {
+    // Configure actions to run on save. Sorted internally.
+    "source.action.useSortedKeys.biome": "explicit", // Explicitly run Biome's sorted keys action.
+    "source.addMissingImports.ts": "explicit", // Explicitly add missing imports for TypeScript.
+    "source.biome": "explicit", // Explicitly run Biome actions (fixable lint/format).
+    "source.fixAll.ts": "explicit", // Explicitly fix all auto-fixable TypeScript problems.
+    "source.organizeImports.biome": "explicit" // Explicitly organize imports using Biome.
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode", // Set Prettier as the default formatter globally (unless overridden).
+  "editor.fontFamily": "FiraCode Nerd Font Mono", // Specify the editor font.
+  "editor.fontLigatures": true, // Enable font ligatures (e.g., for Fira Code).
+  "editor.fontWeight": "500", // Set editor font weight (medium).
+  "editor.formatOnSave": true, // Automatically format the file on save.
+  "editor.minimap.enabled": false, // Disable the editor minimap.
+  "editor.snippetSuggestions": "bottom", // Show snippet suggestions below other suggestions.
+  "editor.tabCompletion": "on", // Enable snippet completion when hitting Tab.
+  "editor.tabSize": 2, // Set the global tab size to 2 spaces.
+  "editor.tokenColorCustomizations": {
+    // Customize token colors for themes.
+    "[*Dark*]": {
+      // Customizations specific to dark themes.
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext", // Scope for specific match text highlighting.
+          "settings": {
+            "foreground": "#fff" // Set foreground color for match text in dark themes.
+          }
+        }
+      ]
+    },
+    "[*Light*]": {
+      // Customizations specific to light themes.
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext", // Scope for specific match text highlighting.
+          "settings": {
+            "foreground": "#000" // Set foreground color for match text in light themes.
+          }
+        }
+      ]
+    },
+    "textMateRules": [
+      // General TextMate rules for syntax highlighting.
+      {
+        "scope": "keyword.other.dotenv", // Scope for keywords in .env files.
+        "settings": {
+          "foreground": "#FF000000" // Set foreground color for dotenv keywords (example).
+        }
+      }
+    ]
+  },
+  "editor.wordWrap": "on", // Enable word wrapping.
+
+  //
+  // ESLint Extension Settings
+  //
+
+  "eslint.enable": true, // Enable the ESLint extension.
+
+  //
+  // Extensions Management Settings
+  //
+
+  "extensions.ignoreRecommendations": true, // Do not show workspace extension recommendations.
+
+  //
+  // Files & Explorer Settings
+  //
+
+  "explorer.compactFolders": false, // Disable compact folder view in the explorer.
+  "files.associations": {
+    // Define file associations. Sorted internally.
+    "*.embeddedhtml": "html", // Treat *.embeddedhtml files as HTML.
+    ".env*": "dotenv" // Treat files starting with .env as dotenv files.
+  },
+  "files.autoSave": "afterDelay", // Automatically save files after a delay.
+  "files.autoSaveDelay": 5000, // Delay in milliseconds before auto-saving (5 seconds).
+  "files.eol": "\n", // Set the default end-of-line sequence to LF (Unix style).
+  "files.exclude": {
+    // Configure files/folders to exclude from the explorer. Sorted internally.
+    "**/.cache": true, // Exclude .cache directories.
+    "**/temp": true, // Exclude temp directories.
+    "**/tmp": true, // Exclude tmp directories.
+    "**/vendor": true // Exclude vendor directories.
+  },
+  "files.insertFinalNewline": true, // Ensure files end with a newline character.
+  "files.trimTrailingWhitespace": true, // Remove trailing whitespace on save.
+
+  //
+  // Formatter Settings (Prettier)
+  //
+
+  "prettier.bracketSameLine": true, // Place the > of a multi-line HTML element at the end of the last line.
+  "prettier.experimentalTernaries": true, // Use newer ternary formatting (may change).
+  "prettier.quoteProps": "consistent", // Use consistent quoting for object properties.
+  "prettier.singleAttributePerLine": true, // Enforce a single attribute per line in HTML/Vue/JSX.
+  "prettier.trailingComma": "all", // Use trailing commas wherever possible (multiline).
+  "prettier.vueIndentScriptAndStyle": true, // Indent script and style tags in Vue files.
+  "prettier.withNodeModules": false, // Do not format files inside node_modules directories.
+
+  //
+  // Git Settings
+  //
+
+  "git.enableSmartCommit": true, // Enable staging all changes when committing with no staged changes.
+
+  //
+  // Go Extension Settings
+  //
+
+  "go.toolsManagement.autoUpdate": true, // Automatically update Go tools used by the extension.
+
+  //
+  // HTML Language/Formatter Settings
+  //
+
+  "html.format.extraLiners": "head, body, /html", // Add extra newlines around these tags.
+  "html.format.wrapAttributes": "force-aligned", // Wrap attributes such that they align.
+
+  //
+  // Java Extension Settings
+  //
+
+  "java.format.enabled": true, // Enable Java formatting provided by the extension.
+  "java.format.settings.url": "https://gist.githubusercontent.com/espimarisa/3daa486f3475d77af94cfef4d310e5ae/raw/1863dbcfec940b9f71a893ba8731137141ac2f47/java-formatter.xml", // URL for custom Java formatter settings.
+  "java.project.referencedLibraries": [
+    // Configure referenced libraries for Java projects.
+    "/usr/share/java/**/*.jar", // Include system Java libraries.
+    "lib/**/*.jar" // Include libraries in a local 'lib' folder.
+  ],
+
+  //
+  // JavaScript Language Settings
+  //
+
+  "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports when files are moved/renamed.
+
+  //
+  // LaTeX Extension Settings
+  //
+
+  "latex-utilities.message.update.show": false, // Disable update messages from LaTeX Utilities extension.
+  "latex-workshop.formatting.latex": "tex-fmt", // Specify tex-fmt as the LaTeX formatter.
+  "latex-workshop.formatting.tex-fmt.args": [
+    // Arguments for the tex-fmt formatter.
+    "--indent",
+    "--indent-size",
+    "--nowrap",
+    "2"
+  ],
+
+  //
+  // Liquid Extension Settings
+  //
+
+  "liquid.format.rules": {
+    // Formatting rules for the Liquid extension. Sorted internally.
+    "endNewline": true, // Ensure file ends with a newline.
+    "indentSize": 2, // Set indent size to 2.
+    "wrap": 80 // Set line wrap length to 80.
+  },
+  "liquid.format.validate": true, // Enable validation for Liquid formatting.
+
+  //
+  // Python Extension Settings
+  //
+
+  "python.experiments.enabled": false, // Disable participation in Python extension experiments.
+  "python.languageServer": "Pylance", // Use Pylance as the Python language server.
+
+  //
+  // Red Hat Extension Settings (General)
+  //
+
+  "redhat.telemetry.enabled": false, // Disable telemetry reporting for Red Hat extensions.
+
+  //
+  // Security Settings
+  //
+
+  "security.workspace.trust.enabled": false, // Disable the Workspace Trust feature.
+  "security.workspace.trust.startupPrompt": "never", // Never prompt for workspace trust on startup.
+
+  //
+  // Shell Format Extension Settings
+  //
+
+  "shellformat.useEditorConfig": true, // Use .editorconfig settings for the shell-format extension.
+
+  //
+  // Svelte Extension Settings
+  //
+
+  "svelte.enable-ts-plugin": true, // Enable the TypeScript plugin within the Svelte extension.
+  "svelte.plugin.css.enable": true, // Enable CSS features within Svelte files.
+  "svelte.plugin.html.enable": true, // Enable HTML features within Svelte files.
+  "svelte.plugin.typescript.enable": true, // Enable TypeScript features within Svelte files.
+
+  //
+  // Telemetry Settings
+  //
+
+  "telemetry.feedback.enabled": false, // Disable feedback surveys.
+  "telemetry.telemetryLevel": "off", // Completely disable telemetry reporting.
+
+  //
+  // Terminal Settings
+  //
+
+  "terminal.integrated.defaultProfile.linux": "zsh", // Set Zsh as the default integrated terminal profile on Linux.
+  "terminal.integrated.defaultProfile.windows": "Ubuntu (WSL)", // Set Ubuntu (WSL) as default on Windows.
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono", // Set the font for the integrated terminal.
+
+  //
+  // TypeScript Language Settings
+  //
+
+  "typescript.updateImportsOnFileMove.enabled": "always", // Automatically update imports when TS files are moved/renamed.
+
+  //
+  // Update Settings
+  //
+
+  "update.showReleaseNotes": false, // Do not show release notes after an update.
+
+  //
+  // VSCord Extension Settings
+  //
+
+  "vscord.app.name": "VSCodium", // Set the application name reported by VSCord (for Discord Rich Presence).
+
+  //
+  // Workbench & Window Settings
+  //
+
+  "breadcrumbs.enabled": false, // Disable breadcrumbs navigation.
+  "window.commandCenter": false, // Hide the Command Center from the title bar.
+  "window.titleBarStyle": "native", // Use the native OS title bar. (Non-default on some OS)
+  "workbench.colorTheme": "GitHub Dark", // Set the workbench color theme.
+  "workbench.editor.editorActionsLocation": "hidden", // Hide editor actions from the title bar/tabs.
+  "workbench.editor.empty.hint": "hidden", // Hide the hint text shown in empty editor groups.
+  "workbench.iconTheme": "material-icon-theme", // Set the file icon theme.
+  "workbench.layoutControl.enabled": false, // Hide the layout control button from the title bar.
+  "workbench.productIconTheme": "material-product-icons", // Set the product icon theme (icons in the UI).
+  "workbench.startupEditor": "none" // Do not open any specific editor on startup.
+}

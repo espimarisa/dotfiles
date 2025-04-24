@@ -1,17 +1,35 @@
+# Top-most EditorConfig file indicator. Stops searching in parent directories.
 root = true
 
+# Default settings for all files unless overridden below.
 [*]
-charset = utf-8
-end_of_line = lf
-indent_size = 2
-indent_style = space
-insert_final_newline = true
-tab_width = 2
-trim_trailing_whitespace = true
+charset = utf-8                     # File character encoding.
+end_of_line = lf                    # Line ending format (Linux/macOS).
+indent_size = 2                     # Number of spaces for indentation.
+indent_style = space                # Use spaces for indentation (not tabs).
+insert_final_newline = true         # Ensure files end with a blank line.
+trim_trailing_whitespace = true     # Remove whitespace characters at the end of lines.
 
+# Batch files require Windows line endings.
+[*.bat]
+end_of_line = crlf                 # Use Carriage Return + Line Feed line endings.
+
+# Specific settings for Java files.
 [*.java]
-indent_size = 3
+indent_size = 3                     # Use 3 spaces for indentation per Checkstyle guidelines.
 
+# Specific settings for Markdown files.
+[*.md]
+trim_trailing_whitespace = false    # Do not remove trailing whitespace (important for hard breaks).
+
+# Specific settings for Python files.
 [*.py]
-indent_size = 4
-indent_style = space
+indent_size = 4                     # Use 4 spaces for indentation (PEP 8 standard).
+
+# Specific settings for YAML files.
+[*.{yaml,yml}]
+indent_size = 2                     # Use 2 spaces for indentation (common YAML convention).
+
+# Specific settings for Makefiles.
+[Makefile]
+indent_style = tab                  # Use hard tabs for indentation (Makefile requirement).

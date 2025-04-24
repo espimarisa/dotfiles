@@ -1,0 +1,8 @@
+{
+  "bracketSameLine": true,
+  "experimentalTernaries": true,
+  "quoteProps": "consistent",
+  "singleAttributePerLine": true,
+  "trailingComma": "all",
+  "vueIndentScriptAndStyle": true
+}
