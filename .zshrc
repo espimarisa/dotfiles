@@ -45,7 +45,6 @@ plugins=(
   bun
   docker
   docker-compose
-  dotenv
   git
   node
   npm
