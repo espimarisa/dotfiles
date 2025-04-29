@@ -1,0 +1,20 @@
+zmodule archive
+zmodule completion
+zmodule duration-info
+zmodule environment
+zmodule git
+zmodule git-info
+zmodule input
+zmodule magic-enter
+zmodule pacman
+zmodule promtp-wd
+zmodule ruby
+zmodule ssh
+zmodule utility
+
+zmodule zsh-users/zsh-completions --fpath src
+zmodule zsh-users/zsh-autosuggestions
+zmodule zsh-users/zsh-syntax-highlighting
+
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)

@@ -1,6 +1,6 @@
 # dotfiles
 
-Useful scripts and configuration files of mine.
+My personal CachyOS Linux system configuration files.
 
 ## License
 

@@ -1,348 +1,100 @@
-#
-# Binary Files (Prevent diff/merge attempts)
-#
-
-# Common archive formats
-*.7z binary
-# Static library
-*.a binary
-# Android App Bundle
-*.aab binary
-# Android package
-*.apk binary
-# macOS application bundle
-*.app binary
-# Windows app package
-*.appx* binary
-# Audio/Video formats
-*.avi binary
-# Generic binary
-*.bin binary
-# Image formats
-*.bmp binary
-# Common archive formats
-*.bz2 binary
-# Common archive formats
-*.cab binary
-# Java bytecode
-*.class binary
-# DOS executable
-*.com binary
-# Generic database file
-*.db binary
-# Debug symbols
-*.dbg binary
-# Linux package
-*.deb binary
-# Windows dynamic library
-*.dll binary
-# macOS disk image
-*.dmg binary
-# Google Draco 3D data compression
-*.drc binary
-# macOS dynamic library
-*.dylib binary
-# macOS debug symbols (treat as binary content)
-*.dSYM binary
-# Java enterprise archive
-*.ear binary
-# Font formats (also listed separately for clarity)
-*.eot binary
-# Encapsulated PostScript
-*.eps binary
-# Windows executable
-*.exe binary
-# Audio/Video formats
-*.flv binary
-# Font formats (also listed separately for clarity)
-*.font binary
-# Ruby gem package
-*.gem binary
-# Image formats
-*.gif binary
-# GL Transmission Format binary
-*.glb binary
-# Although JSON, often treated as binary asset group
-*.gltf binary
-# Common archive formats
-*.gz binary
-# High Efficiency Image Format
-*.heic binary
-# High Efficiency Image Format
-*.heif binary
-# Image formats
-*.ico binary
-# Generic image file
-*.img binary
-# iOS package
-*.ipa binary
-# Disk image
-*.iso binary
-# Java archive
-*.jar binary
-# Image formats
-*.jpeg binary
-# Image formats
-*.jpg binary
-# Static library (Windows)
-*.lib binary
-# Bun lockfile (binary format)
-*.lockb binary
-# Audio/Video formats
-*.m4a binary
-# Audio/Video formats
-*.m4v binary
-# Audio/Video formats
-*.mkv binary
-# Audio/Video formats
-*.mov binary
-# Audio/Video formats
-*.mp3 binary
-# Audio/Video formats
-*.mp4 binary
-# Windows installer
-*.msi binary
-# Windows installer package
-*.msix binary
-# Object file
-*.o binary
-# Object file
-*.obj binary
-# Audio/Video formats
-*.ogg binary
-# Audio/Video formats
-*.ogv binary
-# Font formats (also listed separately for clarity)
-*.otf binary
-# Executable/output file
-*.out binary
-# Perl archive
-*.par binary
-# Treat as binary, optionally use pdf diff tool if configured
-*.pdf binary diff=pdf
-# PHP archive
-*.phar binary
-# Image formats
-*.png binary
-# PowerPoint 97-2003
-*.ppt binary
-# PowerPoint
-*.pptx binary
-# Photoshop Document
-*.psd binary
-# Python compiled bytecode
-*.pyc binary
-# Python optimized bytecode
-*.pyo binary
-# Common archive formats
-*.rar binary
-# Linux package
-*.rpm binary
-# Shared object library (Linux)
-*.so binary
-# Windows print spool file
-*.spl binary
-# SQLite database files
-*.sqlite* binary
-# Common archive formats
-*.tar binary
-# Common archive formats
-*.tar.* binary
-# Image formats
-*.tga binary
-# Common archive formats
-*.tgz binary
-# Image formats
-*.tiff binary
-# Font formats (also listed separately for clarity)
-*.ttf binary
-# Unity package
-*.unitypackage binary
-# VMWare Installation Bundle
-*.vib binary
-# Generic Vendor file
-*.vndr binary
-# Visio Document
-*.vsd binary
-# Java web archive
-*.war binary
-# Audio/Video formats
-*.wav binary
-# Audio/Video formats
-*.webm binary
-# Image formats
-*.webp binary
-# Font formats (also listed separately for clarity)
-*.woff binary
-# Font formats (also listed separately for clarity)
-*.woff2 binary
-# Excel 97-2003
-*.xls binary
-# Excel
-*.xlsx binary
-# Common archive formats
-*.xz binary
-# Common archive formats
-*.zip binary
-
-#
-# Default Handling (Auto-detect text files, normalize line endings to LF)
-#
-
-# Automatically detect text files and normalize their line endings to LF.
 * text=auto eol=lf
 
-#
-# Font Files (Mark as binary)
-#
-
-# Ensure common font file types are treated as binary.
+*.7z binary
+*.a binary
+*.aab binary
+*.apk binary
+*.app binary
+*.appx* binary
+*.avi binary
+*.bin binary
+*.bmp binary
+*.bz2 binary
+*.cab binary
+*.class binary
+*.com binary
+*.db binary
+*.dbg binary
+*.deb binary
 *.dfont binary
-# Ensure common font file types are treated as binary.
+*.dll binary
+*.dmg binary
+*.drc binary
+*.dSYM binary
+*.dylib binary
+*.ear binary
 *.eot binary
-# Ensure common font file types are treated as binary.
+*.eps binary
+*.exe binary
+*.flv binary
+*.font binary
+*.gem binary
+*.gif binary
+*.glb binary
+*.gltf binary
+*.gz binary
+*.heic binary
+*.heif binary
+*.ico binary
+*.img binary
+*.ipa binary
+*.iso binary
+*.jar binary
+*.jpeg binary
+*.jpg binary
+*.lib binary
+*.lockb binary
+*.m4a binary
+*.m4v binary
+*.mkv binary
+*.mov binary
+*.mp3 binary
+*.mp4 binary
+*.msi binary
+*.msix binary
+*.o binary
+*.obj binary
+*.ogg binary
+*.ogv binary
 *.otf binary
-# Ensure common font file types are treated as binary.
+*.out binary
+*.par binary
+*.pdf binary diff=pdf
+*.phar binary
+*.png binary
+*.ppt binary
+*.pptx binary
+*.psd binary
+*.pyc binary
+*.pyo binary
+*.rar binary
+*.rpm binary
+*.so binary
+*.spl binary
+*.sqlite* binary
+*.tar binary
+*.tar.* binary
+*.tga binary
+*.tgz binary
+*.tiff binary
 *.ttf binary
-# Ensure common font file types are treated as binary.
+*.unitypackage binary
+*.vib binary
+*.vndr binary
+*.vsd binary
+*.war binary
+*.wav binary
+*.webm binary
+*.webp binary
 *.woff binary
-# Ensure common font file types are treated as binary.
 *.woff2 binary
+*.xls binary
+*.xlsx binary
+*.xz binary
+*.zip binary
 
-#
-# Generated Files (Often text, but treat carefully)
-#
-
-# Treat lock files (yarn.lock, package-lock.json, etc.) as whole units; disable diffs and merges.
 *.lock -diff -merge
 
-#
-# Git LFS (Example - uncomment and adjust if using LFS globally)
-#
-
-# Mark specific large file types to be handled by Git Large File Storage.
-# Requires `git lfs install --system`. Use primarily in project-specific .gitattributes.
-# *.ai filter=lfs diff=lfs merge=lfs -text
-# *.mov filter=lfs diff=lfs merge=lfs -text
-# *.mp4 filter=lfs diff=lfs merge=lfs -text
-# *.psd filter=lfs diff=lfs merge=lfs -text
-# *.wav filter=lfs diff=lfs merge=lfs -text
-# *.zip filter=lfs diff=lfs merge=lfs -text
-
-#
-# Specific Text Files (Ensure LF endings)
-#
-
-# Force specific file types (that might be misdetected) to be treated as text with LF line endings.
-# Bash scripts
 *.bash text eol=lf
-# C source files
-*.c text eol=lf
-# CommonJS JavaScript modules
-*.cjs text eol=lf
-# Configuration files
-*.conf text eol=lf
-# Configuration files
-*.config text eol=lf
-# C++ source files
-*.cpp text eol=lf
-# C# source files
-*.cs text eol=lf
-# Cascading Style Sheets
-*.css text eol=lf
-# Comma Separated Values
-*.csv text eol=lf
-# Embedded Ruby templates
-*.erb text eol=lf
-# Go source files
-*.go text eol=lf
-# Groovy source files
-*.gvy text eol=lf
-# C/C++ header files
-*.h text eol=lf
-# Handlebars templates
-*.hbs text eol=lf
-# C++ header files
-*.hpp text eol=lf
-# HTML files
-*.htm text eol=lf
-# HTML files
-*.html text eol=lf
-# INI configuration files
-*.ini text eol=lf
-# Java source files
-*.java text eol=lf
-# JavaScript files
-*.js text eol=lf
-# JSON data files
-*.json text eol=lf
-# JavaScript XML (React)
-*.jsx text eol=lf
-# Kotlin source files
-*.kt text eol=lf
-# Kotlin script files
-*.kts text eol=lf
-# Less CSS preprocessor files
-*.less text eol=lf
-# Lua script files
-*.lua text eol=lf
-# Treat Markdown as text, use markdown diff if configured
-*.md text eol=lf diff=markdown
-# ECMAScript JavaScript modules
-*.mjs text eol=lf
-# Makefile scripts
-*.mk text eol=lf
-# Perl scripts
-*.pl text eol=lf
-# Perl modules
-*.pm text eol=lf
-# Java properties files
-*.properties text eol=lf
-# Python scripts
-*.py text eol=lf
-# Ruby scripts
-*.rb text eol=lf
-# Rust source files
-*.rs text eol=lf
-# Sass indented syntax files
-*.sass text eol=lf
-# Scala source files
-*.scala text eol=lf
-# SCSS syntax files
-*.scss text eol=lf
-# Treat shell scripts as text, mark executable for diffs
-*.sh text eol=lf executable
-# SQL scripts
-*.sql text eol=lf
-# Svelte components
-*.svelte text eol=lf
-# SVG is XML-based text
-*.svg text eol=lf
-# Swift source files
-*.swift text eol=lf
-# Perl test files
-*.t text eol=lf
-# TOML configuration files
-*.toml text eol=lf
-# TypeScript files
-*.ts text eol=lf
-# TypeScript XML (React)
-*.tsx text eol=lf
-# Plain text files
-*.txt text eol=lf
-# Visual Basic files
-*.vb text eol=lf
-# Vue components
-*.vue text eol=lf
-# XML files
-*.xml text eol=lf
-# YAML configuration files
-*.yaml text eol=lf
-# YAML configuration files
-*.yml text eol=lf
-# Zsh scripts
-*.zsh text eol=lf
-# Docker configuration file
-Dockerfile text eol=lf
-# Make build script
-Makefile text eol=lf
+*.bat text eol=clrf
+*.sh text eol=lf

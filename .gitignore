@@ -1,569 +1,269 @@
-#
-# Cache & Temporary Files
-#
-
-# Coverage report files (general)
-*cover
-# Backup files
-*.bak
-# General cache files
-*.cache
-# Cache files
-*.cachefile
-# Coverage report files
+# Build/Compilation Artifacts
+*-blx.aux
+*-blx.bib
+*-converted-to.*
+*.7z
+*.a
+*.aab
+*.apk
+*.app
+*.appx*
+*.aux
+*.bbl
+*.bcf
+*.bin
+*.blg
+*.bundle
+*.cab
+*.cb
+*.cb2
+*.class
+*.com
 *.cover
-# General lock files (often specific lock files ARE committed)
-*.lock
-# Rotated log files
-*.log.*
-# Process ID files
-*.pid
-# Process ID lock files
-*.pid.lock
-# Compiled Python files (.pyc, .pyo, .pyd)
+*.dSYM/
+*.dbg
+*.deb
+*.dll
+*.dvi
+*.dyn_hi
+*.dyn_o
+*.ear
+*.elf
+*.exe
+*.fdb_latexmk
+*.fls
+*.fmt
+*.fot
+*.gch
+*.gem
+*.gz
+*.hex
+*.hi
+*.hmap
+*.ipa
+*.jar
+*.kotlin_module
+*.kt.class
+*.kts
+*.lib
+*.lof
+*.lot
+*.msi
+*.msix
+*.o
+*.obj
+*.out
+*.pdb
+*.pdfsync
+*.pmc
 *.py[cod]
-# Python optimized bytecode
 *.pyo
-# SQL Server Compact database file
-*.sdf
-# Often used for database seeds or random seeds
-*.seed
-# Temporary files
-*.tmp
-# TypeScript build info cache
+*.rar
+*.rbc
+*.rpm
+*.run.xml
+*.so
+*.synctex
+*.tar
+*.tar.*
+*.test
+*.tgz
+*.toc
 *.tsbuildinfo
-# Python bytecode cache directory
-__pycache__/
-# Webpack cache loader directory
-.cache-loader/
-# General cache directory
-.cache/
-# Coverage report files/directories
+*.unitypackage
+*.war
+*.webpack/
+*.xdv
+*.zip
+*cover
 .coverage*
-# ESLint cache file
-.eslintcache
-# Fuse filesystem hidden files
-.fuse_hidden*
-# Jekyll static site generator cache directory
-.jekyll-cache/
-# Jekyll metadata file
-.jekyll-metadata
-# npm cache directory (older versions)
-.npm/
-# Parcel bundler cache directory
-.parcel-cache/
-# Pytest cache directory
-.pytest_cache/
-# Sass compiler cache directory
-.sass-cache/
-# Stylelint cache file
-.stylelintcache
-# Temporary directory
-.temp/
-# Temporary directory
-.tmp/
-# Turborepo cache directory
-.turbo/
-# Webpack cache/output directory
-.webpack/
-# General cache directory
-cache/
-# Coverage report directory
+.terraform/
+/.synctex.gz
+/nbbuild/
+/nbdist/
+DerivedData/
+[Ll]ibrary/
+[Oo]bj/
+__pycache__/
+cabal.sandbox.config
 cover/
-# Coverage report directory
 coverage/
-# Node.js cache directory
+nytprof.out
+
+# Cache/Temporary Files
+*.*.lb
+*.bak
+*.cache
+*.cachefile
+*.lock
+*.orig
+*.pid
+*.pid.lock
+*.rej
+*.rs.bk
+*.seed
+*.tmp
+*~
+.cache-loader/
+.cache/
+.eslintcache
+.jekyll-cache/
+.jekyll-metadata
+.npm/
+.parcel-cache/
+.pytest_cache/
+.sass-cache/
+.stylelintcache
+.temp/
+.tmp/
+.turbo/
+/.emacs.d/auto-save-list
+[Tt]emp/
+auto-save-list
+cache/
 node_cache/
-# npm cache directory
 npm-cache/
-# Process ID file directory
 pids/
-# Temporary directory
 temp/
-# Temporary directory
 tmp/
 
-#
-# Compiled Binaries & Archives
-#
-
-# 7-Zip archive
-*.7z
-# Static library
-*.a
-# Android App Bundle
-*.aab
-# Android package
-*.apk
-# macOS application bundle
-*.app
-# Windows app package
-*.appx*
-# Generic binary file
-*.bin
-# macOS bundle / Ruby gem bundle
-*.bundle
-# Windows Cabinet archive
-*.cab
-# Java compiled bytecode
-*.class
-# DOS executable
-*.com
-# Generic database file (sometimes binary)
-*.db
-# Debug symbols
-*.dbg
-# Debian Linux package
-*.deb
-# Windows dynamic link library
-*.dll
-# macOS debug symbols directory
-*.dSYM/
-# Java enterprise archive
-*.ear
-# Linux executable and linkable format
-*.elf
-# Windows executable
-*.exe
-# Ruby gem package
-*.gem
-# Precompiled header file (GCC)
-*.gch
-# Gzip archive
-*.gz
-# Intel HEX file format
-*.hex
-# Disk image file
-*.img
-# iOS package archive
-*.ipa
-# ISO disk image
-*.iso
-# Java archive
-*.jar
-# Static library (Windows)
-*.lib
-# Windows installer package
-*.msi
-# Windows installer package (modern)
-*.msix
-# Object file
-*.o
-# Object file (often Windows)
-*.obj
-# Executable/output file (often Unix)
-*.out
-# Program Database (debug symbols, often Windows)
-*.pdb
-# Parrot Magic Cookie (Perl intermediate)
-*.pmc
-# RAR archive
-*.rar
-# Ruby compiled bytecode
-*.rbc
-# Red Hat Linux package
-*.rpm
-# Shared object library (Linux)
-*.so
-# SQLite 3 database file
-*.sqlite3
-# Tape archive
-*.tar
-# Compressed tape archives (e.g., .tar.gz)
-*.tar.*
-# Gzipped tape archive
-*.tgz
-# Unity asset package
-*.unitypackage
-# Java web archive
-*.war
-# Zip archive
-*.zip
-
-#
 # Dependencies
-#
-
-# PEP 582 Python package directory
 __pypackages__/
-# Bower package manager directory
 bower_components/
-# Common dependency directory name (e.g., Elixir)
 deps/
-# JSPM package manager directory
 jspm_packages/
-# Node.js package manager directory
 node_modules/
-# Common directory for vendored dependencies (e.g., Go, PHP Composer)
 vendor/
-# Ruby Bundler default vendor directory
 vendor/bundle/
-# Snowpack package manager directory
 web_modules/
 
-#
-# Editor & IDE Files
-#
-
-# Emacs auto-save/backup files
-#*#
-# Common backup/lock file pattern? (Uncertain origin)
-*.*.lb
-# Backup files (common editor pattern)
-*.bkp
-# Emacs compiled Lisp files
-*.elc
-# IntelliJ IDEA module file
-*.iml
-# IntelliJ IDEA project file (older format)
-*.ipr
-# IntelliJ IDEA workspace file (older format)
-*.iws
-# Patch original files
-*.orig
-# Patch rejection files
-*.rej
-# Sublime Text project file
-*.sublime-project
-# Sublime Text workspace file
-*.sublime-workspace
-# Vim swap files (various states)
-*.sw[a-p]
-# Vim swap files (various states)
-*.swp[a-z]
-# Vim undo files
-*.un~
-# Vim session information file
-*.viminfo
-# Common editor backup file pattern (Emacs, Kate, etc.)
-*~
-# Emacs auto-save list directory
-/.emacs.d/auto-save-list
-# NetBeans actions file
-/nbactions.xml
-# NetBeans build directory
-/nbbuild/
-# NetBeans distribution directory
-/nbdist/
-# NetBeans profile directory
-/nbprofile/
-# NetBeans private project files directory
-/nbproject/private/
-# VS Code multi-root workspace file
-.code-workspace
-# Various tools history directory/file
-.history
-# VS Code Local History directory
-.history/
-# IntelliJ IDEA project directory
-.idea/
-# Various tools local history directory
-.localhistory
-# Vim netrw history file
-.netrwhist
-# Eclipse project settings directory
-.settings/
-# TextMate project file
-.tmproj
-# VS Code workspace settings directory
-.vscode/
-# Vim session file
-Session.vim
-# Emacs auto-save list file
-auto-save-list
-
-#
-# Language Specific Artifacts
-#
-
-# LaTeX BibLaTeX auxiliary file
-*-blx.aux
-# LaTeX BibLaTeX generated bibliography
-*-blx.bib
-# LaTeX converted graphics files
-*-converted-to.*
-# LaTeX SyncTeX compressed file (root?)
-/.synctex.gz
-# Terraform state and modules directory
-.terraform/
-# LaTeX auxiliary file
-*.aux
-# LaTeX bibliography file
-*.bbl
-# LaTeX BibLaTeX control file
-*.bcf
-# LaTeX bibliography log file
-*.blg
-# LaTeX file? (Uncertain)
-*.cb
-# LaTeX file? (Uncertain)
-*.cb2
-# C# project file (often contains user settings)
+# Editor/IDE Files
 *.csproj
-# LaTeX Device Independent file format
-*.dvi
-# Haskell GHC dynamic interface file
-*.dyn_hi
-# Haskell GHC dynamic object file
-*.dyn_o
-# LaTeX latexmk database file
-*.fdb_latexmk
-# LaTeX file list file
-*.fls
-# LaTeX format file
-*.fmt
-# LaTeX file? (Uncertain)
-*.fot
-# Haskell GHC interface file
-*.hi
-# Header map file (Xcode)
-*.hmap
-# Kotlin compiled class file (outside standard build dirs)
-*.kt.class
-# Kotlin module info file (IntelliJ)
-*.kotlin_module
-# Kotlin script compiled state?
-*.kts
-# LaTeX List of Figures file
-*.lof
-# LaTeX List of Tables file
-*.lot
-# Object file (often language specific build artifact)
-*.o
-# LaTeX pdfsync file
-*.pdfsync
-# Rust backup file (some tools create this)
-*.rs.bk
-# LaTeX BibLaTeX run log
-*.run.xml
-# Visual Studio Solution file (often contains user settings)
+*.elc
+*.iml
+*.ipr
+*.iws
 *.sln
-# Visual Studio Solution User Options file
+*.sublime-project
+*.sublime-workspace
 *.suo
-# LaTeX SyncTeX file
-*.synctex
-# Go test executable output
-*.test
-# Terraform state file (sensitive, usually managed remotely)
-*.tfstate
-# Terraform state backup file
-*.tfstate.backup
-# LaTeX Table of Contents file
-*.toc
-# Unity project file (older)
+*.sw[a-p]
+*.swp[a-z]
 *.unityproj
-# Generic user settings file (e.g., C#, Visual Studio)
+*.un~
 *.user
-# Visual Studio specific directory (contains user settings, etc.)
+*.viminfo
 *.vs/
-# LaTeX Extended DVI file
-*.xdv
-# Xcode user data directory content
 *.xcuserdatad
-# Xcode user state file
 *.xcuserstate
-# Unity Library directory
-[Ll]ibrary/
-# Common build object directory (e.g., Unity, .NET)
-[Oo]bj/
-# Unity Temp directory
-[Tt]emp/
-# Xcode derived data directory
-DerivedData/
-# Haskell Cabal sandbox config
-cabal.sandbox.config
-# Perl NYTProf profiler output
-nytprof.out
-# Perl::Critic history file
+.code-workspace
+.history
+.history/
+.idea/
+.localhistory
+.netrwhist
+.settings/
+.tmproj
+.vscode/
+/nbactions.xml
+/nbprofile/
+/nbproject/private/
+Session.vim
 perlcritic.history
 
-#
 # Logs
-#
-
-# General log files
 *.log
-# Common debug log file name
+*.log.*
 debug.log
-# Erlang crash dump file
 erl_crash.dump
-# Common error log file name
 error.log
-# Haskell GHC crash log file pattern
 hs_err_pid*
-# General log directory
 logs/
-# npm debug log file pattern
 npm-debug.log*
-# pnpm debug log file pattern
 pnpm-debug.log*
-# Common replay log/pid file pattern
 replay_pid*
-# Common stack dump file pattern
 stackdump.*
-# Yarn debug log file pattern
 yarn-debug.log*
-# Yarn error log file pattern
 yarn-error.log*
 
-#
-# Misc
-#
-
-# Diff files
+# Miscellaneous
+*.db
 *.diff
-# macOS iCloud Drive placeholder/sync files
-*.icloud
-# Windows shortcut files
-*.lnk
-# Patch files
+*.img
+*.iso
 *.patch
-
-#
-# Operating System Files
-#
-
-# Windows Recycle Bin directory
-$RECYCLE.BIN/
-# macOS AppleDouble resource fork storage
-.AppleDB
-# macOS AppleDouble related files
-.AppleDesktop
-# macOS resource fork storage on non-HFS+ volumes
-.AppleDouble
-# macOS related disk file?
-.apdisk
-# macOS Time Machine exclusion marker
-.com.apple.timemachine.donotpresent
-# macOS document versioning directory
-.DocumentRevisions-V100
-# macOS Desktop Services Store file (folder metadata)
-.DS_Store
-# macOS Desktop Services Store file (alternative?)
-.DS_Store?
-# Windows media thumbnail cache (older)
-.ehthumbs.db
-# Windows media thumbnail cache (Vista)
-.ehthumbs_vista.db
-# macOS File System Events daemon log directory
-.fseventsd/
-# macOS custom icon file / Linux KDE icon cache
-.Icon?
-# macOS localized folder name marker
-.localized
-# macOS Launch Services override file
-.LSOverride
-# macOS Spotlight index data
-.Spotlight-V100
-# macOS temporary items directory
-.TemporaryItems/
-# macOS Trash directory
-.Trashes/
-# macOS custom volume icon file
-.VolumeIcon.icns
-# macOS AppleDouble resource fork file remnants
-._*
-# Windows folder customization file
-desktop.ini
-# Windows thumbnail cache
-ehthumbs.db
-# macOS/Linux icon file
+*.sdf
+*.sqlite3
 Icon?
-# Windows thumbnail cache (older)
+
+# Operating System Files
+$RECYCLE.BIN/
+*.icloud
+*.lnk
+.AppleDB
+.AppleDesktop
+.AppleDouble
+.DS_Store
+.DS_Store?
+.DocumentRevisions-V100
+.Icon?
+.LSOverride
+.Spotlight-V100
+.TemporaryItems/
+.Trashes/
+.VolumeIcon.icns
+._*
+.apdisk
+.com.apple.timemachine.donotpresent
+.ehthumbs.db
+.ehthumbs_vista.db
+.fseventsd/
+.fuse_hidden*
+desktop.ini
+ehthumbs.db
 Thumbs.db
-# Windows encrypted thumbnail cache
 Thumbs.db:encryptable
 
-#
-# Secrets & Credentials
-#
-
-# AWS credentials and configuration directory
-.aws/
-# Azure credentials and configuration directory
-.azure/
-# Environment variables file (often contains secrets)
-.env
-# Environment-specific .env files (e.g., .env.local)
-.env.*
-# Direnv environment variables file
-.envrc
-# Google Cloud credentials and configuration directory
-.gcloud/
-# Apache password file
-.htpasswd
-# PGP armored ASCII file (can contain private keys)
+# Secrets/Credentials
 *.asc
-# Java KeyStore (can contain private keys)
 *.jks
-# Private key files (generic)
 *.key
-# macOS Keychain file
 *.keychain
-# Private key files (generic)
 *.keys
-# PKCS#12 file (can contain private keys)
 *.p12
-# PEM file (can contain private keys or certificates)
 *.pem
-# PFX file (can contain private keys)
 *.pfx
-# PKCS#12 file (can contain private keys)
 *.pkcs12
-# Private key files (generic)
 *.private
-# Python Package Index configuration (can contain credentials)
 *.pypirc
-# Generic secret file
 *.secret
-# Network credentials file (FTP, HTTP)
+*.tfstate
+*.tfstate.backup
+.aws/
+.azure/
+.env
+.env.*
+.envrc
+.gcloud/
+.htpasswd
 _netrc
-# Configuration file (may contain secrets)
-config.json
-# Configuration file (may contain secrets)
-config.toml
-# Configuration file (may contain secrets)
-config.yaml
-# Configuration file (may contain secrets)
-config.yml
-# Credential files (generic pattern)
 credentials*
-# Deployment key files
 deploy-key*
-# SSH DSA private key
 id_dsa
-# SSH ECDSA private key
 id_ecdsa
-# SSH Ed25519 private key
 id_ed25519
-# SSH RSA private key
 id_rsa
-# SSH known hosts file (less sensitive, but personal)
 known_hosts
-# Django local settings file (often contains secrets)
 local_settings.py*
-# Network credentials file (FTP, HTTP)
 netrc
-# npm configuration file (can contain auth tokens)
 npmrc
-# Generic secret file pattern
 secrets.*
-# Local settings file (e.g., Drupal - often contains secrets)
 settings.local.php
-# SSH daemon configuration (less common globally, but personal)
 sshd_config
 
-#
 # Virtual Environments
-#
-
-# Direnv per-directory environment directory
 .direnv/
-# Common virtual environment directory name
 .env/
-# Standard Python virtual environment directory name
 .venv/
-# Common virtual environment directory name
 env/
-# Common virtual environment directory name
 venv/

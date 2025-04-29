@@ -1,36 +1,19 @@
-#
-# Aliases
-#
-
 [alias]
-a = "add ."                                                               # Add all changes in the current directory to the staging area.
-b = "branch -v"                                                           # List local branches with verbose information.
-ba = "branch -a -v"                                                       # List all branches (local and remote) with verbose information.
-bd = "branch -d"                                                          # Delete a local branch (use with caution).
-bD = "branch -D"                                                          # Force delete a local branch (use with extreme caution).
-c = "commit -m"                                                           # Commit staged changes with a message provided on the command line.
-ca = "commit -am"                                                         # Add all tracked, modified files and commit with a message.
-co = "checkout"                                                           # Checkout a branch or commit.
-cob = "checkout -b"                                                       # Create a new branch and check it out immediately.
-hist = "log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short" # Show commit history with condensed graph, date, message, and author.
-ignored = "ls-files -v --ignored --exclude-standard"                      # List ignored files matching standard excludes.
-l = "log --oneline --graph --decorate"                                    # Show a condensed log with graph and decorations.
-last = "log -1 HEAD"                                                      # Show the details of the most recent commit.
-r = "reset"                                                               # Reset the staging area (soft reset).
-rh = "reset --hard"                                                       # Reset staging area and working directory to match the last commit.
-s = "status -sb"                                                          # Show concise status output with branch information.
-sh = "stash"                                                              # Stash current changes.
-shl = "stash list"                                                        # List all stashed changes.
-shp = "stash pop"                                                         # Apply the most recent stash and remove it from the stash list.
-st = "status"                                                             # Show the working tree status.
-unstage = "reset HEAD --"                                                 # Remove files from the staging area (unstage).
-
-#
-# Color Settings (Main UI)
-#
+a = "add ."
+b = "branch -v"
+bd = "branch -d"
+c = "commit -m"
+co = "checkout"
+cob = "checkout -b"
+hist = "log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
+ignored = "ls-files -v --ignored --exclude-standard"
+r = "reset"
+s = "status -sb"
+st = "status"
+unstage = "reset HEAD --"
 
 [color]
-ui = "auto" # Automatically use colors in Git commands when outputting to a terminal.
+ui = "auto"
 
 [color "branch"]
 current = "yellow reverse" # Color for the current checked-out branch.
@@ -49,68 +32,37 @@ added = "yellow"   # Color for added files (staged).
 changed = "green"  # Color for changed files (staged).
 untracked = "cyan" # Color for untracked files.
 
-#
-# Commit Settings
-#
-
 [commit]
 gpgsign = true # Automatically sign commits with the configured GPG key.
 
-#
-# Core Settings
-#
-
 [core]
-attributesfile = "~/.gitattributes" # Specifies the file containing global gitattributes rules.
-autocrlf = false                    # Disable automatic CRLF<->LF translation; handle via .gitattributes.
-defaultBranch = "main"              # Sets the default branch name for newly created repositories (Git 2.28+).
-editor = "micro"                    # Specifies the editor used for commit messages, interactive rebasing, etc.
-excludesfile = "~/.gitignore"       # Specifies the file containing global gitignore patterns.
-
-#
-# Diff Behavior
-#
+attributesfile = "~/.gitattributes"
+autocrlf = false
+defaultBranch = "main"
+editor = "micro"
+eol = lf
+excludesfile = "~/.gitignore"
 
 [diff]
-colorMoved = "default" # Highlight moved lines of code distinctly in diffs.
-tool = "micro"         # Specifies the external tool to use for 'git difftool'.
-
-#
-# Fetch Behavior
-#
+colorMoved = "default"
+tool = "micro"
 
 [fetch]
-prune = true # Remove remote-tracking references that no longer exist on the remote during fetch.
-
-#
-# Merge Behavior
-#
+prune = true
 
 [merge]
-conflictstyle = "diff3" # Specifies the conflict style (diff3 shows base, local, remote).
-tool = "micro"          # Specifies the external tool to use for 'git mergetool'.
-
-#
-# Pull Behavior
-#
+conflictstyle = "diff3"
+tool = "micro"
 
 [pull]
-rebase = false # Use merge commits (instead of rebase) when running 'git pull'.
-
-#
-# Push Behavior
-#
+rebase = false
 
 [push]
-autoSetupRemote = true # Automatically set upstream tracking for new branches on first push.
-default = "simple"     # Default push behavior: push current branch to its upstream counterpart. Safer default.
-
-#
-# User Settings
-#
+autoSetupRemote = true
+default = "simple"
 
 [user]
-email = "contact@espi.me"       # Email address.
-name = "Espi Marisa"            # Name.
-signingkey = "BC546F551DEE4E3E" # GPG signing key ID, used if commit.gpgsign is true.
-username = "espimarisa"         # GitHub username.
+email = "contact@espi.me"
+name = "Espi Marisa"
+signingkey = "BC546F551DEE4E3E"
+username = "espimarisa"
