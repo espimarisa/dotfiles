@@ -73,25 +73,6 @@ export EDITOR="micro"
 export PAGER="less"
 export LANG="en_US.UTF-8"
 
-
-#
-# Keybindings
-#
-
-# zsh-history-substring-search bindings
-bindkey -e
-zmodload -F zsh/terminfo +p:terminfo
-
-# Bind Up/Down arrows if terminfo definitions exist
-if (( ${+terminfo[kcuu1]} && ${+terminfo[kcud1]} )); then
-  bindkey "${terminfo[kcuu1]}" history-substring-search-up
-  bindkey "${terminfo[kcud1]}" history-substring-search-down
-fi
-
-# Bind Ctrl+P / Ctrl+N as fallbacks or alternatives
-bindkey '^P' history-substring-search-up
-bindkey '^N' history-substring-search-down
-
 #
 # Aliases
 #
