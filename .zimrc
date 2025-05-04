@@ -1,4 +1,5 @@
 zmodule archive
+zmodule asciiship
 zmodule completion
 zmodule duration-info
 zmodule environment
@@ -7,7 +8,7 @@ zmodule git-info
 zmodule input
 zmodule magic-enter
 zmodule pacman
-zmodule promtp-wd
+zmodule prompt-pwd
 zmodule ruby
 zmodule ssh
 zmodule utility
