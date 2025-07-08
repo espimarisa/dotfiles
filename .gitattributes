@@ -1,100 +1,97 @@
-* text=auto eol=lf
+* text=auto
 
+# Batchfiles require CRLF.
+*.{bat,[bB][aA][tT]} text eol=crlf
+*.{cmd,[cC][mM][dD]} text eol=crlf
+
+# Shell files require LF.
+*.bash text eol=lf
+*.sh text eol=lf
+
+# Specific diff viewer options.
+*.css text diff=css
+*.htm text diff=html
+*.html text diff=html
+*.markdown text diff=markdown
+*.md text diff=markdown
+*.mdown text diff=markdown
+*.mdwn text diff=markdown
+*.mkd text diff=markdown
+*.mkdn text diff=markdown
+*.php text diff=php
+*.ps1 text eol=crlf
+*.py text diff=python
+*.rb text diff=ruby
+*.scss text diff=css
+*.xhtml text diff=html
+
+# Fixes syntax highlighting on GitHub to allow comments.
+tsconfig.json linguist-language=JSON-with-Comments
+
+# Hide lockfiles in diffs.
+*.lock text -diff
+bun.lock text -diff
+package-lock.json text eol=lf -diff
+pnpm-lock.yaml text eol=lf -diff
+yarn.lock text -diff
+
+# Hide source mappings in diffs.
+*.map text -diff
+
+# Binary files.
+*.3gp binary
+*.3gpp binary
 *.7z binary
-*.a binary
-*.aab binary
-*.apk binary
-*.app binary
-*.appx* binary
+*.as binary
+*.asf binary
+*.asx binary
 *.avi binary
-*.bin binary
 *.bmp binary
-*.bz2 binary
-*.cab binary
-*.class binary
-*.com binary
-*.db binary
-*.dbg binary
-*.deb binary
-*.dfont binary
-*.dll binary
-*.dmg binary
-*.drc binary
-*.dSYM binary
-*.dylib binary
-*.ear binary
 *.eot binary
-*.eps binary
 *.exe binary
+*.fla binary
 *.flv binary
-*.font binary
-*.gem binary
 *.gif binary
-*.glb binary
-*.gltf binary
 *.gz binary
-*.heic binary
-*.heif binary
 *.ico binary
-*.img binary
-*.ipa binary
-*.iso binary
 *.jar binary
+*.jng binary
 *.jpeg binary
 *.jpg binary
-*.lib binary
-*.lockb binary
+*.kar binary
 *.m4a binary
 *.m4v binary
-*.mkv binary
+*.mid binary
+*.midi binary
+*.mng binary
 *.mov binary
 *.mp3 binary
 *.mp4 binary
-*.msi binary
-*.msix binary
-*.o binary
-*.obj binary
+*.mpeg binary
+*.mpg binary
 *.ogg binary
 *.ogv binary
 *.otf binary
-*.out binary
-*.par binary
-*.pdf binary diff=pdf
-*.phar binary
+*.pdf binary
 *.png binary
-*.ppt binary
-*.pptx binary
+*.psb binary
 *.psd binary
 *.pyc binary
-*.pyo binary
+*.ra binary
 *.rar binary
-*.rpm binary
-*.so binary
-*.spl binary
-*.sqlite* binary
+*.svg text
+*.swc binary
+*.swf binary
 *.tar binary
-*.tar.* binary
-*.tga binary
-*.tgz binary
+*.tif binary
 *.tiff binary
 *.ttf binary
-*.unitypackage binary
-*.vib binary
-*.vndr binary
-*.vsd binary
-*.war binary
-*.wav binary
+*.wbmp binary
 *.webm binary
 *.webp binary
 *.woff binary
 *.woff2 binary
-*.xls binary
-*.xlsx binary
-*.xz binary
 *.zip binary
-
-*.lock -diff -merge
-
-*.bash text eol=lf
-*.bat text eol=clrf
-*.sh text eol=lf
+**/.yarn/plugins/** binary
+**/.yarn/releases/** binary
+dist/* binary

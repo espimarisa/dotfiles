@@ -1,0 +1,45 @@
+[CompactMode]
+PreviewSize=16
+
+[ContentDisplay]
+DirectorySizeMode=ContentSize
+UsePermissionsFormat=NumericFormat
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+
+[DetailsMode]
+PreviewSize=16
+
+[General]
+EditableUrl=true
+FilterBar=true
+GlobalViewProps=false
+HideXTrashFile=true
+OpenExternallyCalledFolderInNewTab=true
+OpenNewTabAfterLastTab=true
+RememberOpenedTabs=false
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
+SortingChoice=CaseInsensitiveSorting
+
+[IconsMode]
+IconSize=48
+PreviewSize=112
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs,gdk-pixbuf-thumbnailer
+
+[Search]
+What=Content
+
+[VersionControl]
+enabledPlugins=Git

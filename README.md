@@ -1,7 +1,7 @@
 # dotfiles
 
-My personal CachyOS Linux system configuration files.
+My personal system configuration files.
 
 ## License
 
-[MIT](LICENSE)
+[zlib](LICENSE.md)

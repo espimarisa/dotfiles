@@ -5,9 +5,13 @@
   "*.py": {
     "tabsize": 4
   },
+  "*.yml": {
+    "tabsize": 4
+  },
   "autosu": true,
   "colorcolumn": 80,
   "colorscheme": "dukedark-tc",
+  "mkparents": true,
   "permbackup": true,
   "rmtrailingws": true,
   "saveundo": true,

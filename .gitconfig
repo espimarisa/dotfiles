@@ -33,7 +33,7 @@ changed = "green"  # Color for changed files (staged).
 untracked = "cyan" # Color for untracked files.
 
 [commit]
-gpgsign = true # Automatically sign commits with the configured GPG key.
+gpgsign = true
 
 [core]
 attributesfile = "~/.gitattributes"
@@ -62,7 +62,7 @@ autoSetupRemote = true
 default = "simple"
 
 [user]
-email = "contact@espi.me"
+email = "hi@espi.me"
 name = "Espi Marisa"
-signingkey = "BC546F551DEE4E3E"
+signingkey = "D1D272375852A187BA45FC1DFB4F405BB1FD9548"
 username = "espimarisa"

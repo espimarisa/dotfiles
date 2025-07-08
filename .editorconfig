@@ -8,26 +8,26 @@ indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
-# Batch files require crlf
+# Batch files require crlf.
 [*.bat]
 end_of_line = crlf
 
-# Checkstyle likes 3 spaces
+# Follow checkstyle 3-space guidelines.
 [*.java]
 indent_size = 3
 
-# Do not remove trailing whitespace from markdown
+# Do not remove trailing whitespace from markdown.
 [*.md]
 trim_trailing_whitespace = false
 
-# PEP-8 standard
+# Follow PEP-8 guidelines.
 [*.py]
 indent_size = 4
 
-# YAML standard
+# Follow YAML standard guidelines.
 [*.{yaml,yml}]
 indent_size = 2
 
-# Makefile requirement
+# Makefile requires hard tabs.
 [Makefile]
 indent_style = tab

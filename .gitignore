@@ -1,4 +1,4 @@
-# Build/Compilation Artifacts
+# Build/Compilation artifacts.
 *-blx.aux
 *-blx.bib
 *-converted-to.*
@@ -90,20 +90,8 @@ cover/
 coverage/
 nytprof.out
 
-# Cache/Temporary Files
-*.*.lb
-*.bak
-*.cache
-*.cachefile
-*.lock
-*.orig
-*.pid
-*.pid.lock
-*.rej
-*.rs.bk
-*.seed
-*.tmp
-*~
+# Cache/Temporary files.
+.astro/
 .cache-loader/
 .cache/
 .eslintcache
@@ -117,8 +105,21 @@ nytprof.out
 .temp/
 .tmp/
 .turbo/
-/.emacs.d/auto-save-list
 [Tt]emp/
+*.*.lb
+*.bak
+*.cache
+*.cachefile
+*.lock
+*.orig
+*.pid
+*.pid.lock
+*.rej
+*.rs.bk
+*.seed
+*.tmp
+*~
+/.emacs.d/auto-save-list
 auto-save-list
 cache/
 node_cache/
@@ -127,7 +128,7 @@ pids/
 temp/
 tmp/
 
-# Dependencies
+# Dependencies.
 __pypackages__/
 bower_components/
 deps/
@@ -137,7 +138,16 @@ vendor/
 vendor/bundle/
 web_modules/
 
-# Editor/IDE Files
+# Editor/IDE files.
+.code-workspace
+.history
+.history/
+.idea/
+.localhistory
+.netrwhist
+.settings/
+.tmproj
+.vscode/
 *.csproj
 *.elc
 *.iml
@@ -149,29 +159,20 @@ web_modules/
 *.suo
 *.sw[a-p]
 *.swp[a-z]
-*.unityproj
 *.un~
+*.unityproj
 *.user
 *.viminfo
 *.vs/
 *.xcuserdatad
 *.xcuserstate
-.code-workspace
-.history
-.history/
-.idea/
-.localhistory
-.netrwhist
-.settings/
-.tmproj
-.vscode/
 /nbactions.xml
 /nbprofile/
 /nbproject/private/
-Session.vim
 perlcritic.history
+Session.vim
 
-# Logs
+# Log files.
 *.log
 *.log.*
 debug.log
@@ -186,7 +187,7 @@ stackdump.*
 yarn-debug.log*
 yarn-error.log*
 
-# Miscellaneous
+# Miscellaneous files.
 *.db
 *.diff
 *.img
@@ -196,35 +197,43 @@ yarn-error.log*
 *.sqlite3
 Icon?
 
-# Operating System Files
-$RECYCLE.BIN/
-*.icloud
-*.lnk
+# Operating System files.
+._*
+.apdisk
 .AppleDB
 .AppleDesktop
 .AppleDouble
+.com.apple.timemachine.donotpresent
+.DocumentRevisions-V100
 .DS_Store
 .DS_Store?
-.DocumentRevisions-V100
+.ehthumbs_vista.db
+.ehthumbs.db
+.fseventsd/
+.fuse_hidden*
 .Icon?
 .LSOverride
 .Spotlight-V100
 .TemporaryItems/
 .Trashes/
 .VolumeIcon.icns
-._*
-.apdisk
-.com.apple.timemachine.donotpresent
-.ehthumbs.db
-.ehthumbs_vista.db
-.fseventsd/
-.fuse_hidden*
+*.icloud
+*.lnk
+$RECYCLE.BIN/
 desktop.ini
 ehthumbs.db
 Thumbs.db
 Thumbs.db:encryptable
 
-# Secrets/Credentials
+# Secrets and credentials.
+_netrc
+.aws/
+.azure/
+.env
+.env.*
+.envrc
+.gcloud/
+.htpasswd
 *.asc
 *.jks
 *.key
@@ -239,14 +248,6 @@ Thumbs.db:encryptable
 *.secret
 *.tfstate
 *.tfstate.backup
-.aws/
-.azure/
-.env
-.env.*
-.envrc
-.gcloud/
-.htpasswd
-_netrc
 credentials*
 deploy-key*
 id_dsa
@@ -261,9 +262,12 @@ secrets.*
 settings.local.php
 sshd_config
 
-# Virtual Environments
+# Virtual environments.
 .direnv/
 .env/
 .venv/
 env/
 venv/
+
+# Explicit includes.
+!.env.example*

@@ -1,0 +1,155 @@
+{
+  //-------------------------//
+  // Extension settings.     //
+  //-------------------------//
+
+  "biome.lsp.bin": "~/.bun/bin/biome",
+  "biome.suggestInstallingGlobally": false,
+  "docker.extension.enableComposeLanguageServer": true,
+  "docker.lsp.telemetry": "off",
+  "dotenv.enableAutocloaking": false,
+  "vscord.app.name": "VSCodium",
+  "latex-utilities.message.update.show": false,
+  "python.experiments.enabled": false,
+  "python.languageServer": "Pylance",
+  "redhat.telemetry.enabled": false,
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.css.enable": true,
+  "svelte.plugin.html.enable": true,
+
+  //-------------------------//
+  // Language settings.      //
+  //-------------------------//
+
+  "[css][json][jsonc][less][markdown][html][scss][yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+
+  "[dockerfile][dotenv][ignore][properties][shellscript]": {
+    "editor.defaultFormatter": "foxundermoon.shell-format"
+  },
+
+  "[javascript][javascriptreact][typescript][typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.preferences.importModuleSpecifier": "relative",
+    "javascript.preferences.importModuleSpecifierEnding": "auto",
+    "javascript.suggest.paths": false,
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.preferences.importModuleSpecifierEnding": "auto",
+    "typescript.preferences.useAliasesForRenames": false,
+    "typescript.suggest.paths": false,
+    "typescript.updateImportsOnFileMove.enabled": "always"
+  },
+
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop"
+  },
+
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.autopep8"
+  },
+
+  "[svelte]": {
+    "editor.defaultFormatter": "svelte.svelte-vscode"
+  },
+
+  "[toml]": {
+    "editor.defaultFormatter": "tamasfe.even-better-toml"
+  },
+
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+
+  //-------------------------//
+  // Formatting settings.    //
+  //-------------------------//
+
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.tabCompletion": "off",
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "latex-workshop.formatting.latex": "tex-fmt",
+  "latex-workshop.formatting.tex-fmt.args": [
+    "--indent",
+    "--indent-size",
+    "--nowrap",
+    "2"
+  ],
+  "prettier.arrowParens": "always",
+  "prettier.bracketSameLine": true,
+  "prettier.bracketSpacing": true,
+  "prettier.embeddedLanguageFormatting": "auto",
+  "prettier.enable": true,
+  "prettier.endOfLine": "lf",
+  "prettier.experimentalTernaries": true,
+  "prettier.htmlWhitespaceSensitivity": "css",
+  "prettier.jsxSingleQuote": false,
+  "prettier.printWidth": 80,
+  "prettier.proseWrap": "preserve",
+  "prettier.quoteProps": "consistent",
+  "prettier.semi": true,
+  "prettier.singleAttributePerLine": false,
+  "prettier.singleQuote": false,
+  "prettier.tabWidth": 2,
+  "prettier.trailingComma": "all",
+  "prettier.useEditorConfig": true,
+  "prettier.useTabs": false,
+  "prettier.vueIndentScriptAndStyle": true,
+  "prettier.withNodeModules": false,
+  "shellformat.useEditorConfig": true,
+
+  //---------------------//
+  // Editor settings.    //
+  //---------------------//
+
+  "git.enableSmartCommit": true,
+  "workbench.editor.empty.hint": "hidden",
+  "breadcrumbs.enabled": false,
+  "editor.fontFamily": "FiraCode Nerd Font Mono",
+  "editor.fontLigatures": true,
+  "editor.fontWeight": 500,
+  "editor.minimap.autohide": true,
+  "editor.wordWrap": "on",
+  "explorer.compactFolders": false,
+  "telemetry.feedback.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  "terminal.integrated.defaultProfile.linux": "zsh",
+  "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
+  "update.showReleaseNotes": false,
+  "window.autoDetectColorScheme": true,
+  "window.commandCenter": false,
+  "window.titleBarStyle": "native",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.layoutControl.enabled": false,
+  "workbench.preferredDarkColorTheme": "GitHub Dark",
+  "workbench.productIconTheme": "material-product-icons",
+  "workbench.startupEditor": "none",
+
+  //---------------------//
+  // File settings.      //
+  //---------------------//
+
+  "files.associations": {
+    ".env*": "dotenv"
+  },
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 5000,
+  "files.exclude": {
+    "**/_site": true,
+    "**/.astro": true,
+    "**/.cache": true,
+    "**/.DS_Store": true,
+    "**/.git": true,
+    "**/.hg": true,
+    "**/.ruby-lsp": true,
+    "**/.svn": true,
+    "**/.turbo": true,
+    "**/CVS": true,
+    "**/dist": true,
+    "**/node_modules": true,
+    "**/Thumbs.db": true
+  }
+}
