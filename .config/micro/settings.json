@@ -1,22 +1,16 @@
 {
-  "*.java": {
-    "tabsize": 3
-  },
-  "*.py": {
-    "tabsize": 4
-  },
-  "*.yml": {
-    "tabsize": 4
-  },
-  "autosu": true,
-  "colorcolumn": 80,
-  "colorscheme": "dukedark-tc",
-  "mkparents": true,
-  "permbackup": true,
-  "rmtrailingws": true,
-  "saveundo": true,
-  "scrollbar": true,
-  "softwrap": true,
-  "tabsize": 2,
-  "tabstospaces": true
+	"*.java": {
+		"tabsize": 3
+	},
+	"autosu": true,
+	"colorcolumn": 80,
+	"colorscheme": "dukedark-tc",
+	"mkparents": true,
+	"permbackup": true,
+	"rmtrailingws": true,
+	"saveundo": true,
+	"scrollbar": true,
+	"softwrap": true,
+	"tabsize": 4,
+	"tabstospaces": false
 }

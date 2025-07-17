@@ -1,131 +1,69 @@
 #!/bin/zsh
 
-#
-# Zim
-#
-
 export ZIM_HOME="${HOME}/.zim"
-mkdir -p "${ZIM_HOME}"
 
 # Auto install zimfw.zsh if missing.
 if [[ ! -e "${ZIM_HOME}/zimfw.zsh" ]]; then
-  # Use curl if available.
-  if (( ${+commands[curl]} )); then
-    print -R "Zim: Downloading zimfw.zsh with curl..."
-    curl -fsSL --create-dirs -o "${ZIM_HOME}/zimfw.zsh" \
-        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
+	mkdir -p "${ZIM_HOME}"
+	print -R "Zim: Downloading zimfw.zsh..."
+	curl -fsSL --create-dirs -o "${ZIM_HOME}/zimfw.zsh" \
+		https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
 
-  # Use wget if available.
-  elif (( ${+commands[wget]} )); then
-    print -R "Zim: Downloading zimfw.zsh with wget..."
-    mkdir -p "${ZIM_HOME}" && wget -nv -O "${ZIM_HOME}/zimfw.zsh" \
-        https://github.com/zimfw/zimfw/releases/latest/download/zimfw.zsh
-  else
-    print -R "Zim: Error: curl or wget is required to download zimfw.zsh." >&2
-  fi
 fi
 
 # Install missing modules, and update ${ZIM_HOME}/init.zsh if missing or outdated.
-# This runs 'zimfw init' if .zimrc has changed or init.zsh is missing/older.
 if [[ ! "${ZIM_HOME}/init.zsh" -nt "${ZIM_CONFIG_FILE:-${ZDOTDIR:-${HOME}}/.zimrc}" ]]; then
-  # Check if zimfw.zsh exists before trying to source it.
-  if [[ -f "${ZIM_HOME}/zimfw.zsh" ]]; then
-      print -R "Zim: Initializing modules..."
-    # Source the zimfw script to run the init command.
-    source "${ZIM_HOME}/zimfw.zsh" init
-  # Check if ZIM_HOME itself exists before showing the error.
-  elif [[ -e "${ZIM_HOME}" ]]; then
-      print -R "Zim: Error: ${ZIM_HOME}/zimfw.zsh not found." >&2
-  fi
+	# Check if zimfw.zsh exists before trying to source it.
+	if [[ -f "${ZIM_HOME}/zimfw.zsh" ]]; then
+		print -R "Zim: Initializing modules..."
+		source "${ZIM_HOME}/zimfw.zsh" init
+	fi
 fi
 
 # Source Zim's generated init script.
 if [[ -s "${ZIM_HOME}/init.zsh" ]]; then
-  source "${ZIM_HOME}/init.zsh"
-else
-    if [[ -e "${ZIM_HOME}" ]]; then
-        print -R "Zim: Warning: ${ZIM_HOME}/init.zsh not found or empty. Run 'zimfw install'." >&2
-    fi
+	source "${ZIM_HOME}/init.zsh"
 fi
 
-#
-# ZSH
-#
-
-WORDCHARS=${WORDCHARS//[\/]/} # Affects word boundaries for movements/deletion.
-
-# Settings for Zim modules
-ZSH_AUTOSUGGEST_MANUAL_REBIND=1 # autosuggestions.
-ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets) # highlighting.
-
-setopt auto_param_slash      # Append / to directory names on completion.
-setopt autocd                # Change dir just by typing the dir name.
-setopt correct               # Auto correct commands.
-setopt extendedglob          # Use extended globbing features (#, ~, ^).
-setopt HIST_IGNORE_ALL_DUPS  # If a new command is identical to an older one, remove the older one.
-setopt incappendhistory      # Write history incrementally.
-setopt interactive_comments  # Allow comments even in interactive shells.
-setopt sharehistory          # Share history between all sessions.
-
-# Environment variables.
-export EDITOR="micro"
-export PAGER="less"
-export LANG="en_US.UTF-8"
-
-#
-# Aliases.
-#
-
-alias ..="cd .."
-alias ...="cd ../.."
-alias grep="grep --color=auto"
-alias l="ls -CF" # List files, classify type (/ @ * | =).
-alias la="ls -A" # List all files including hidden, except . and ..
-alias ll="ls -alF" # List all files, long format, classify type.
-alias ls="ls --color=auto"
-
-
-#
-# System PATH.
-#
+WORDCHARS=${WORDCHARS//[\/]/}              # Affects word boundaries for movements/deletion.
+ZSH_AUTOSUGGEST_MANUAL_REBIND=1            # Autosuggestion support.
+ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets) # Highlighting support.
+setopt auto_param_slash                    # Append / to directory names on completion.
+setopt autocd                              # Change dir just by typing the dir name.
+setopt correct                             # Auto correct commands.
+setopt extendedglob                        # Use extended globbing features.
+setopt HIST_IGNORE_ALL_DUPS                # If a new command is identical to an older one, remove the older one.
+setopt incappendhistory                    # Write history incrementally.
+setopt interactive_comments                # Allow comments even in interactive shells.
+setopt sharehistory                        # Share history between all sessions.
+export EDITOR="micro"                      # Use micro as the editor.
+export PAGER="less"                        # Use less as the pager.
+export LANG="en_US.UTF-8"                  # en_US
+alias grep="grep --color=auto"             # Use color in grep.
+alias ls="ls --color=auto"                 # Use color in ls.
 
 typeset -U path
 path=(
-  # User-specific binaries.
-  "$HOME/bin"
-  "$HOME/.local/bin"
-
-  # Tool-specific binaries.
-  "$HOME/.bun/bin"
-  "$HOME/.cargo/bin"
-
-  # System paths.
-  "/usr/local/sbin"
-  "/usr/local/bin"
-  "/usr/bin"
-  "/usr/sbin"
-  "/bin"
-  "/sbin"
+	"$HOME/bin"
+	"$HOME/.local/bin"
+	"$HOME/.bun/bin"   # Bun binaries
+	"$HOME/.cargo/bin" # Cargo binaries
+	"/usr/local/sbin"
+	"/usr/local/bin"
+	"/usr/bin"
+	"/usr/sbin"
+	"/bin"
+	"/sbin"
 )
 
 export PATH
+export NVM_DIR="$HOME/.nvm" # NVM
 
-# NVM.
-export NVM_DIR="$HOME/.nvm"
-
-# Check standard system package path.
+# Check standard system package path for nvm.
 if [[ -s "/usr/share/nvm/init-nvm.sh" ]]; then
-  source "/usr/share/nvm/init-nvm.sh"
+	source "/usr/share/nvm/init-nvm.sh"
 
-# Check standard user install path.
+# Check standard user install path for nvm.
 elif [[ -s "$NVM_DIR/nvm.sh" ]]; then
-  source "$NVM_DIR/nvm.sh"
+	source "$NVM_DIR/nvm.sh"
 fi
-
-#
-# Functions.
-#
-
-showpath() {
-  print -l -- $path
-}

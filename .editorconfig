@@ -3,8 +3,8 @@ root = true
 [*]
 charset = utf-8
 end_of_line = lf
-indent_size = 2
-indent_style = space
+indent_size = 4
+indent_style = tab
 insert_final_newline = true
 trim_trailing_whitespace = true
 
@@ -20,14 +20,12 @@ indent_size = 3
 [*.md]
 trim_trailing_whitespace = false
 
-# Follow PEP-8 guidelines.
+# Follow PEP-8 guidelines; use spaces.
 [*.py]
 indent_size = 4
+indent_style = space
 
-# Follow YAML standard guidelines.
+# YAML requires spaces for indentation.
 [*.{yaml,yml}]
-indent_size = 2
-
-# Makefile requires hard tabs.
-[Makefile]
-indent_style = tab
+indent_size = 4
+indent_style = space

@@ -5,8 +5,8 @@
 */
 
 * {
-  font-family: "Atkinson Hyperlegible Next" !important;
-  font-weight: 400 !important;
+	font-family: "Atkinson Hyperlegible Next" !important;
+	font-weight: 400 !important;
 }
 
 /**
@@ -15,7 +15,7 @@
 */
 
 button[aria-label="Send a gift"] {
-  display: none;
+	display: none;
 }
 
 /**
@@ -27,7 +27,7 @@ button[aria-label="Send a gift"] {
 *[href="/shop"],
 *[href="/store"],
 *[href="/library"] {
-  display: none;
+	display: none;
 }
 
 /**
@@ -36,5 +36,5 @@ button[aria-label="Send a gift"] {
 */
 
 [class*="nowPlayingColumn_"] {
-  display: none;
+	display: none;
 }
