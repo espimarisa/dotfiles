@@ -1,7 +1,4 @@
 {
-	"[astro]": {
-		"editor.defaultFormatter": "astro-build.astro-vscode"
-	},
 	"[dotenv][env]": {
 		"editor.defaultFormatter": "socheatsok78-lab.dotenv-vscode-stripped"
 	},
@@ -42,6 +39,10 @@
 	"docker.lsp.telemetry": "off",
 	"dotenv.enableAutocloaking": false,
 	"editor.bracketPairColorization.enabled": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.organizeImports.biome": "explicit"
+	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
 	"editor.fontFamily": "FiraCode Nerd Font Mono",
 	"editor.fontLigatures": true,
@@ -55,7 +56,7 @@
 	"editor.minimap.autohide": true,
 	"editor.semanticHighlighting.enabled": true,
 	"editor.tabCompletion": "off",
-	"editor.tabSize": 4,
+	"editor.tabSize": 2,
 	"editor.tokenColorCustomizations": {
 		"textMateRules": []
 	},
@@ -105,7 +106,7 @@
 		"--indent",
 		"--indent-size",
 		"--nowrap",
-		"4"
+		"2"
 	],
 	"markdown.updateLinksOnFileMove.enabled": "always",
 	"prettier.arrowParens": "always",
@@ -123,7 +124,7 @@
 	"prettier.semi": true,
 	"prettier.singleAttributePerLine": false,
 	"prettier.singleQuote": false,
-	"prettier.tabWidth": 4,
+	"prettier.tabWidth": 2,
 	"prettier.trailingComma": "all",
 	"prettier.useEditorConfig": true,
 	"prettier.useTabs": true,

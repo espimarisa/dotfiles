@@ -22,7 +22,7 @@ remote = "green"           # Color for remote-tracking branches.
 
 [color "diff"]
 frag = "magenta bold"      # Color for hunk headers.
-meta = "yellow bold"       # Color for meta information (e.g., index line).
+meta = "yellow bold"       # Color fore meta information (e.g., index line).
 new = "green bold"         # Color for added lines.
 old = "red bold"           # Color for deleted lines.
 whitespace = "red reverse" # Highlight trailing whitespace errors.
