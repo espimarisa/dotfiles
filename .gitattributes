@@ -1,97 +1,11 @@
-* text=auto
+# Use LF by default
+* text eol=lf
 
-# Batchfiles require CRLF.
-*.{bat,[bB][aA][tT]} text eol=crlf
-*.{cmd,[cC][mM][dD]} text eol=crlf
+# Batchfiles require CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
 
-# Shell files require LF.
-*.bash text eol=lf
-*.sh text eol=lf
-
-# Specific diff viewer options.
-*.css text diff=css
-*.htm text diff=html
-*.html text diff=html
-*.markdown text diff=markdown
-*.md text diff=markdown
-*.mdown text diff=markdown
-*.mdwn text diff=markdown
-*.mkd text diff=markdown
-*.mkdn text diff=markdown
-*.php text diff=php
-*.ps1 text eol=crlf
-*.py text diff=python
-*.rb text diff=ruby
-*.scss text diff=css
-*.xhtml text diff=html
-
-# Fixes syntax highlighting on GitHub to allow comments.
-tsconfig.json linguist-language=JSON-with-Comments
-
-# Hide lockfiles in diffs.
-*.lock text -diff
-bun.lock text -diff
-package-lock.json text eol=lf -diff
-pnpm-lock.yaml text eol=lf -diff
-yarn.lock text -diff
-
-# Hide source mappings in diffs.
+# Hide lockfiles and source mappings in diffs
+*.lock* text -diff
+*.lockb binary -diff
 *.map text -diff
-
-# Binary files.
-*.3gp binary
-*.3gpp binary
-*.7z binary
-*.as binary
-*.asf binary
-*.asx binary
-*.avi binary
-*.bmp binary
-*.eot binary
-*.exe binary
-*.fla binary
-*.flv binary
-*.gif binary
-*.gz binary
-*.ico binary
-*.jar binary
-*.jng binary
-*.jpeg binary
-*.jpg binary
-*.kar binary
-*.m4a binary
-*.m4v binary
-*.mid binary
-*.midi binary
-*.mng binary
-*.mov binary
-*.mp3 binary
-*.mp4 binary
-*.mpeg binary
-*.mpg binary
-*.ogg binary
-*.ogv binary
-*.otf binary
-*.pdf binary
-*.png binary
-*.psb binary
-*.psd binary
-*.pyc binary
-*.ra binary
-*.rar binary
-*.svg text
-*.swc binary
-*.swf binary
-*.tar binary
-*.tif binary
-*.tiff binary
-*.ttf binary
-*.wbmp binary
-*.webm binary
-*.webp binary
-*.woff binary
-*.woff2 binary
-*.zip binary
-**/.yarn/plugins/** binary
-**/.yarn/releases/** binary
-dist/* binary

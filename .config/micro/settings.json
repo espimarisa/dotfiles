@@ -2,6 +2,16 @@
 	"*.java": {
 		"tabsize": 3
 	},
+	"*.py": {
+		"tabsize": 2,
+		"tabtospaces": true
+	},
+	"*.yaml": {
+		"tabtospaces": true
+	},
+	"*.yml": {
+		"tabtospaces": true
+	},
 	"autosu": true,
 	"colorcolumn": 80,
 	"colorscheme": "dukedark-tc",
@@ -11,6 +21,6 @@
 	"saveundo": true,
 	"scrollbar": true,
 	"softwrap": true,
-	"tabsize": 4,
+	"tabsize": 2,
 	"tabstospaces": false
 }

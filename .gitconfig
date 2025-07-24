@@ -16,21 +16,21 @@ unstage = "reset HEAD --"
 ui = "auto"
 
 [color "branch"]
-current = "yellow reverse" # Color for the current checked-out branch.
-local = "yellow"           # Color for local branches.
-remote = "green"           # Color for remote-tracking branches.
+current = "yellow reverse"
+local = "yellow"
+remote = "green"
 
 [color "diff"]
-frag = "magenta bold"      # Color for hunk headers.
-meta = "yellow bold"       # Color fore meta information (e.g., index line).
-new = "green bold"         # Color for added lines.
-old = "red bold"           # Color for deleted lines.
-whitespace = "red reverse" # Highlight trailing whitespace errors.
+frag = "magenta bold"
+meta = "yellow bold"
+new = "green bold"
+old = "red bold"
+whitespace = "red reverse"
 
 [color "status"]
-added = "yellow"   # Color for added files (staged).
-changed = "green"  # Color for changed files (staged).
-untracked = "cyan" # Color for untracked files.
+added = "yellow"
+changed = "green"
+untracked = "cyan"
 
 [commit]
 gpgsign = true

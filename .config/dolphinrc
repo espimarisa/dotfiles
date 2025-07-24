@@ -1,0 +1,51 @@
+[CompactMode]
+IconSize=22
+
+[ContentDisplay]
+DirectorySizeMode=ContentSize
+UsePermissionsFormat=CombinedFormat
+
+[ContextMenu]
+ShowCopyMoveMenu=true
+
+[DetailsMode]
+IconSize=22
+PreviewSize=16
+
+[General]
+BrowseThroughArchives=true
+EditableUrl=true
+FilterBar=true
+ShowFullPath=true
+ShowFullPathInTitlebar=true
+ShowStatusBar=FullWidth
+ShowZoomSlider=true
+SortingChoice=CaseSensitiveSorting
+UseTabForSwitchingSplitView=true
+Version=202
+ViewPropsTimestamp=2025,7,12,16,31,27.949
+
+[InformationPanel]
+dateFormat=ShortFormat
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[MainWindow][Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[PreviewSettings]
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,blenderthumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,fontthumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,gsf-office,mobithumbnail,opendocumentthumbnail,gsthumbnail,rawthumbnail,svgthumbnail,textthumbnail,ffmpegthumbs,gdk-pixbuf-thumbnailer
+
+[Search]
+Location=Everywhere
+
+[Toolbar mainToolBar]
+ToolButtonStyle=IconOnly
+
+[VersionControl]
+enabledPlugins=Git

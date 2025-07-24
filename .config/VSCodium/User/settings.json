@@ -2,9 +2,8 @@
 	"[dotenv][env]": {
 		"editor.defaultFormatter": "socheatsok78-lab.dotenv-vscode-stripped"
 	},
-	"[liquid]": {
-		"editor.defaultFormatter": "Shopify.theme-check-vscode",
-		"editor.formatOnType": true
+	"[jsonc]": {
+		"prettier.trailingComma": "none"
 	},
 	"[markdown][mdx]": {
 		"files.trimTrailingWhitespace": false
@@ -12,35 +11,29 @@
 	"[sass]": {
 		"editor.defaultFormatter": "syler.sass-indented"
 	},
-	"[shellscript][dockerfile]": {
-		"editor.defaultFormatter": "mkhl.shfmt"
-	},
-	"[svelte]": {
-		"editor.defaultFormatter": "svelte.svelte-vscode"
-	},
 	"astro.updateImportsOnFileMove.enabled": true,
-	"biome.enabled": true,
-	"biome.lsp.bin": "~/.bun/bin/biome",
+	"basedpyright.importStrategy": "useBundled",
 	"biome.requireConfiguration": true,
 	"biome.suggestInstallingGlobally": false,
-	"breadcrumbs.enabled": false,
+	"breadcrumbs.enabled": true,
+	"chat.agent.enabled": false,
+	"chat.commandCenter.enabled": false,
+	"chat.edits2.enabled": false,
+	"chat.extensionTools.enabled": false,
+	"chat.mcp.discovery.enabled": false,
+	"chat.mcp.enabled": false,
 	"cSpell.checkOnlyEnabledFileTypes": true,
 	"cSpell.enabledFileTypes": {
 		"*": false,
 		"markdown": true,
+		"md": true,
 		"mdx": true
 	},
-	"cSpell.userWords": ["Espi", "espimarisa"],
-	"css.lint.unknownAtRules": "ignore",
-	"dart.updateImportsOnRename": true,
-	"database-client.autoSync": true,
-	"database-client.telemetry.usesOnlineServices": false,
-	"docker.extension.enableComposeLanguageServer": true,
-	"docker.lsp.telemetry": "off",
+	"cSpell.userWords": ["Espi", "espimarisa", "espi.me"],
 	"dotenv.enableAutocloaking": false,
 	"editor.bracketPairColorization.enabled": true,
 	"editor.codeActionsOnSave": {
-		"source.fixAll": "explicit",
+		"source.fixAll.biome": "explicit",
 		"source.organizeImports.biome": "explicit"
 	},
 	"editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -51,22 +44,25 @@
 	"editor.formatOnSave": true,
 	"editor.guides.bracketPairs": true,
 	"editor.indentSize": "tabSize",
-	"editor.inlineSuggest.enabled": true,
 	"editor.linkedEditing": true,
 	"editor.minimap.autohide": true,
 	"editor.semanticHighlighting.enabled": true,
-	"editor.tabCompletion": "off",
+	"editor.tabCompletion": "onlySnippets",
 	"editor.tabSize": 2,
-	"editor.tokenColorCustomizations": {
-		"textMateRules": []
-	},
 	"editor.wordWrap": "on",
+	"emmet.includeLanguages": {
+		"njk": "html",
+		"nunjucks": "html",
+		"postcss": "css"
+	},
+	"emmet.showSuggestionsAsSnippets": true,
+	"emmet.syntaxProfiles": {
+		"postcss": "css"
+	},
 	"errorLens.enabledDiagnosticLevels": ["error", "warning"],
-	"eslint.enable": true,
 	"explorer.compactFolders": false,
-	"extensions.ignoreRecommendations": false,
+	"extensions.ignoreRecommendations": true,
 	"files.associations": {
-		"*.dbclient-js": "javascript",
 		"*.env*": "dotenv"
 	},
 	"files.autoSave": "afterDelay",
@@ -78,14 +74,11 @@
 		"**/.DS_Store": true,
 		"**/.git": true,
 		"**/.hg": true,
-		"**/.jekyll-cache": true,
-		"**/.ruby-lsp": true,
-		"**/.svelte-kit": true,
 		"**/.svn": true,
 		"**/.turbo": true,
-		"**/CVS": true,
 		"**/dist": true,
 		"**/node_modules": true,
+		"**/out": true,
 		"**/Thumbs.db": true
 	},
 	"files.insertFinalNewline": true,
@@ -93,13 +86,9 @@
 	"git.autofetch": true,
 	"git.enableSmartCommit": true,
 	"git.openRepositoryInParentFolders": "always",
-	"html.autoClosingTags": true,
-	"javascript.autoClosingTags": true,
 	"javascript.preferences.importModuleSpecifier": "relative",
-	"javascript.preferences.importModuleSpecifierEnding": "auto",
 	"javascript.suggest.paths": false,
 	"javascript.updateImportsOnFileMove.enabled": "always",
-	"javascript.updateImportsOnPaste.enabled": true,
 	"latex-utilities.message.update.show": false,
 	"latex-workshop.formatting.latex": "tex-fmt",
 	"latex-workshop.formatting.tex-fmt.args": [
@@ -108,12 +97,10 @@
 		"--nowrap",
 		"2"
 	],
-	"markdown.updateLinksOnFileMove.enabled": "always",
 	"prettier.arrowParens": "always",
 	"prettier.bracketSameLine": true,
 	"prettier.bracketSpacing": true,
 	"prettier.embeddedLanguageFormatting": "auto",
-	"prettier.enable": true,
 	"prettier.endOfLine": "lf",
 	"prettier.experimentalTernaries": true,
 	"prettier.htmlWhitespaceSensitivity": "css",
@@ -126,44 +113,36 @@
 	"prettier.singleQuote": false,
 	"prettier.tabWidth": 2,
 	"prettier.trailingComma": "all",
-	"prettier.useEditorConfig": true,
 	"prettier.useTabs": true,
 	"prettier.vueIndentScriptAndStyle": true,
-	"prettier.withNodeModules": false,
-	"python.experiments.enabled": false,
-	"python.languageServer": "Pylance",
 	"redhat.telemetry.enabled": false,
-	"scss.lint.unknownAtRules": "ignore",
-	"security.workspace.trust.banner": "never",
 	"security.workspace.trust.enabled": false,
-	"security.workspace.trust.startupPrompt": "never",
 	"svelte.enable-ts-plugin": true,
-	"svelte.plugin.css.enable": true,
-	"svelte.plugin.html.enable": true,
 	"tailwindCSS.emmetCompletions": true,
 	"telemetry.feedback.enabled": false,
 	"telemetry.telemetryLevel": "off",
 	"terminal.integrated.defaultProfile.linux": "zsh",
 	"terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
-	"typescript.autoClosingTags": true,
 	"typescript.preferences.importModuleSpecifier": "relative",
 	"typescript.preferences.importModuleSpecifierEnding": "auto",
 	"typescript.preferences.useAliasesForRenames": false,
 	"typescript.suggest.paths": false,
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"typescript.updateImportsOnPaste.enabled": true,
-	"update.mode": "manual",
 	"update.showReleaseNotes": false,
 	"versionlens.suggestions.showOnStartup": true,
 	"vscord.app.name": "VSCodium",
-	"window.autoDetectColorScheme": true,
+	"vscord.status.idle.check": false,
 	"window.commandCenter": false,
+	"window.menuBarVisibility": "toggle",
 	"window.titleBarStyle": "native",
+	"workbench.colorTheme": "GitHub Dark",
 	"workbench.editor.empty.hint": "hidden",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.layoutControl.enabled": false,
-	"workbench.preferredDarkColorTheme": "GitHub Dark",
+	"workbench.panel.showLabels": false,
 	"workbench.productIconTheme": "material-product-icons",
 	"workbench.startupEditor": "none",
-	"xml.completion.autoCloseTags": true
+	"workbench.tips.enabled": false,
+	"window.customTitleBarVisibility": "never"
 }

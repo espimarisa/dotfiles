@@ -4,7 +4,7 @@
 	"cloud": {
 		"authenticated": true,
 		"settingsSync": true,
-		"settingsSyncVersion": 1752711885421,
+		"settingsSyncVersion": 1753306625993,
 		"url": "https://api.vencord.dev/"
 	},
 	"disableMinSize": false,
@@ -356,7 +356,7 @@
 		},
 		"NotificationVolume": {
 			"enabled": true,
-			"notificationVolume": 50.0
+			"notificationVolume": 50
 		},
 		"NoTrack": {
 			"disableAnalytics": true,
