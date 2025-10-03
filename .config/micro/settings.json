@@ -3,24 +3,22 @@
 		"tabsize": 3
 	},
 	"*.py": {
-		"tabsize": 2,
+		"tabsize": 4,
 		"tabtospaces": true
 	},
 	"*.yaml": {
 		"tabtospaces": true
 	},
 	"*.yml": {
+		"tabsize": 2,
 		"tabtospaces": true
 	},
 	"autosu": true,
 	"colorcolumn": 80,
-	"colorscheme": "dukedark-tc",
 	"mkparents": true,
 	"permbackup": true,
 	"rmtrailingws": true,
 	"saveundo": true,
 	"scrollbar": true,
-	"softwrap": true,
-	"tabsize": 2,
-	"tabstospaces": false
+	"softwrap": true
 }

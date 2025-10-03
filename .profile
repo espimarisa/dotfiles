@@ -1,8 +1,5 @@
-# Prefer the KDE file picker.
-export GTK_USE_PORTAL=1
+#!/bin/sh
 
-# Fix GTK apps missing their menu bars.
-export GTK_MODULES="unity-gtk-module"
-
-# KF6 integration for LibreOffice.
-export SAL_USE_VCLPLUGIN=kf6
+export GTK_MODULES="unity-gtk-module" # Fix GTK apps missing their menu bars.
+export GTK_USE_PORTAL=1               # Prefer the KDE file picker.
+export SAL_USE_VCLPLUGIN=kf6          # KF6 integration for LibreOffice.

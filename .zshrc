@@ -39,8 +39,6 @@ setopt sharehistory                        # Share history between all sessions.
 export EDITOR="micro"                      # Use micro as the editor.
 export PAGER="less"                        # Use less as the pager.
 export LANG="en_US.UTF-8"                  # en_US
-alias grep="grep --color=auto"             # Use color in grep.
-alias ls="ls --color=auto"                 # Use color in ls.
 
 typeset -U path
 path=(

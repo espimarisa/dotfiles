@@ -1,6 +1,6 @@
 # dotfiles
 
-My personal system configuration files.
+Personal configuration files from my CachyOS installs.
 
 ## License
 

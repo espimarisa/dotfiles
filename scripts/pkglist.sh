@@ -1,2 +1,2 @@
 #!/bin/sh
-paru -Qq > ~/.pkglist-dump.txt
+paru -Qq >~/.pkglist-dump.txt
