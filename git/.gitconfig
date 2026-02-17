@@ -1,0 +1,45 @@
+[alias]
+a = "add ."
+b = "branch -v"
+bd = "branch -d"
+c = "commit -m"
+co = "checkout"
+cob = "checkout -b"
+hist = "log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short"
+ignored = "ls-files -v --ignored --exclude-standard"
+r = "reset"
+s = "status -sb"
+st = "status"
+unstage = "reset HEAD --"
+
+[color]
+ui = "auto"
+
+[commit]
+gpgsign=true
+
+[core]
+attributesfile= "~/.gitattributes"
+autocrlf=input
+editor="micro"
+eol=lf
+excludesfile = "~/.gitignore"
+
+[fetch]
+prune=true
+
+[init]
+defaultBranch="main"
+
+[pull]
+rebase=false
+
+[push]
+autoSetupRemote=true
+default="simple"
+
+[user]
+email="hi@espi.me"
+name="Espi Marisa"
+signingkey="FB4F405BB1FD9548"
+username="espimarisa"

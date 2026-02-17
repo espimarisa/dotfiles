@@ -1,0 +1,30 @@
+{
+	"*.{md,mdx,markdown}": {
+		"rmtrailingws": false
+	},
+	"*.{yaml,yml}": {
+		"tabsize": 2,
+		"tabtospaces": true
+	},
+	"*.py": {
+		"tabtospaces": true
+	},
+	"autoclose": true,
+	"autosu": true,
+	"clipboard": "external",
+	"colorscheme": "one-dark",
+	"comment": true,
+	"eofnewline": true,
+	"ftoptions": true,
+	"linter": true,
+	"matchbracestyle": "highlight",
+	"mkparents": true,
+	"rmtrailingws": true,
+	"saveundo": true,
+	"scrollbar": true,
+	"showchars": "tab",
+	"softwrap": true,
+	"status": true,
+	"tabsize": 4,
+	"wordwrap": true
+}
