@@ -74,19 +74,7 @@ path=(
 export PATH
 
 # Kitty SSH wrapper. Resolves terminfo issues on remote servers.
-if [[ "$TERM" == "xterm-kitty" ]]; then
-	alias ssh="kitty +kitten ssh"
-fi
-
-# SSH agent initialization and passphrase storage support.
-if [[ -d "$HOME/.ssh" ]]; then
-	if ! pgrep -u "$USER" ssh-agent >/dev/null; then
-		ssh-agent -t 1h >"$HOME/.ssh/agent.env"
-	fi
-	if [[ -z "$SSH_AUTH_SOCK" && -f "$HOME/.ssh/agent.env" ]]; then
-		source "$HOME/.ssh/agent.env" >/dev/null
-	fi
-fi
+[ "$TERM" = "xterm-kitty" ] && alias ssh="kitty +kitten ssh"
 
 # Tools: rbenv. $ paru -S rbenv ruby-build.
 if [[ -d "$HOME/.rbenv/bin" ]]; then
