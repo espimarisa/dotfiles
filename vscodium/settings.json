@@ -96,6 +96,7 @@
 		"xml",
 		"yaml"
 	],
+	"docker.extension.enableComposeLanguageServer": false,
 	"docker.lsp.telemetry": "off",
 	"editor.aiStats.enabled": false,
 	"editor.autoIndent": "advanced",
