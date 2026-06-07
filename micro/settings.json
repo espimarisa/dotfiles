@@ -12,7 +12,7 @@
 	"autoclose": true,
 	"autosu": true,
 	"clipboard": "external",
-	"colorscheme": "one-dark",
+	"colorscheme": "catppuccin-mocha",
 	"comment": true,
 	"eofnewline": true,
 	"ftoptions": true,
