@@ -1,21 +1,35 @@
 {
 	"*.{md,mdx,markdown}": {
+		"colorcolumn": 0,
 		"rmtrailingws": false
+	},
+	"*.{sh,zsh}": {
+		"tabsize": 4,
+		"tabtospaces": true
 	},
 	"*.{yaml,yml}": {
 		"tabsize": 2,
 		"tabtospaces": true
 	},
 	"*.py": {
+		"colorcolumn": 80,
+		"keepautoindent": true,
+		"tabsize": 4,
 		"tabtospaces": true
 	},
 	"autoclose": true,
 	"autosu": true,
 	"clipboard": "external",
-	"colorscheme": "catppuccin-mocha",
+	"colorcolumn": 0,
+	"colorscheme": "simple",
 	"comment": true,
+	"cursorline": true,
 	"eofnewline": true,
 	"ftoptions": true,
+	"hlsearch": true,
+	"ignorecase": true,
+	"incsearch": true,
+	"keepautoindent": true,
 	"linter": true,
 	"matchbracestyle": "highlight",
 	"mkparents": true,
@@ -23,6 +37,7 @@
 	"saveundo": true,
 	"scrollbar": true,
 	"showchars": "tab",
+	"smartcase": true,
 	"softwrap": true,
 	"status": true,
 	"tabsize": 4,

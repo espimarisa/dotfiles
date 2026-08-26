@@ -1,0 +1,14 @@
+* {
+	font-family: "Atkinson Hyperlegible Next" !important;
+}
+
+*[href="/shop"],
+*[href="/store"],
+*[href="/library"],
+*[href="/quest-home"] {
+	display: none;
+}
+
+[class*="nowPlayingColumn_"] {
+	display: none;
+}
